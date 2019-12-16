@@ -5,6 +5,7 @@ import Bio from "./Bio";
 import Media from "./Media";
 import Footer from "../components/Footer";
 import $ from "jquery";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 $(window).scroll(function() {
   if ($(window).scrollTop() >= 100) {
@@ -19,11 +20,21 @@ $(window).scroll(function() {
 export default function Main() {
   return (
     <div className="main">
-      <Navbar />
-      <Home />
-      <Bio />
-      <Media />
-      <Footer />
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/bio">
+            <Bio />
+          </Route>
+          <Route path="/media">
+            <Media />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }

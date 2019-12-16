@@ -6,7 +6,7 @@ import Section4 from "../components/home/Section4";
 
 export default function Home() {
   return (
-    <div className="home">
+    <div className="home view">
       <Section1 />
       <Section2 />
       <Section3 />

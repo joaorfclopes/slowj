@@ -1,7 +1,9 @@
 /****************GENERAL****************/
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap");
 html {
   -ms-overflow-style: none;
   scrollbar-width: none !important;
+  font-family: "Roboto Condensed", sans-serif;
 }
 html::-webkit-scrollbar {
   width: 0 !important;
@@ -41,6 +43,9 @@ body {
   width: 15vh;
 }
 /****************NAVBAR****************/
+.view {
+  padding-top: 55px;
+}
 .navbar {
   position: fixed;
   height: 55px;
@@ -65,19 +70,35 @@ body {
 }
 .logo {
   width: 35px;
+  cursor: pointer;
 }
 .navLinks {
   float: right;
   text-align: right;
   width: 50%;
+  padding-top: 10px;
 }
 .links {
-  width: 35px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  display: inline;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.linkMargin {
+  margin-right: 30px;
+}
+.linkTo {
+  color: inherit;
+  text-decoration: inherit;
 }
 /****************HOME****************/
 /*SECTION 1*/
 .homeSection1 {
-  padding-top: 8vh;
   height: 100vh;
   background: url("./assets/images/background.jpg") no-repeat;
   background-size: cover;
