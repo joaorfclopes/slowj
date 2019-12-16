@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Main from "./views/Main";
 
 let body = document.getElementsByTagName("body")[0];
 
@@ -28,6 +29,10 @@ export default class App extends Component {
   }
 
   render() {
-    return <div className="App"></div>;
+    return (
+      <div className="App">
+        <Main />
+      </div>
+    );
   }
 }
