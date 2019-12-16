@@ -43,17 +43,41 @@ body {
 /****************NAVBAR****************/
 .navbar {
   position: fixed;
-  top: 0;
-  width: 100%;
-  height: 6vh;
+  height: 55px;
   background: #0a0a0a;
   color: white;
   transition: 0.4s;
 }
+.navbarContainer {
+  height: 55px;
+  width: 100vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  transition: 0.4s;
+}
+.navLogo {
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+.logo {
+  width: 35px;
+}
+.navLinks {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+.links {
+  width: 35px;
+}
 /****************HOME****************/
 /*SECTION 1*/
 .homeSection1 {
-  padding-top: 6vh;
+  padding-top: 8vh;
   height: 100vh;
   background: url("./assets/images/background.jpg") no-repeat;
   background-size: cover;
@@ -67,7 +91,7 @@ body {
 /*SECTION 3*/
 .homeSection3 {
   height: 100vh;
-  background: #C4C4C4;
+  background: #c4c4c4;
 }
 /*SECTION 4*/
 .homeSection4 {

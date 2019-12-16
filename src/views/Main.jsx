@@ -8,9 +8,11 @@ import $ from "jquery";
 
 $(window).scroll(function() {
   if ($(window).scrollTop() >= 100) {
-    $(".navbar").css("height", "7.5vh");
+    $(".navbar").css("height", "65px");
+    $(".navbarContainer").css("height", "65px");
   } else {
-    $(".navbar").css("height", "6vh");
+    $(".navbar").css("height", "55px");
+    $(".navbarContainer").css("height", "55px");
   }
 });
 
@@ -21,7 +23,7 @@ export default function Main() {
       <Home />
       <Bio />
       <Media />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
