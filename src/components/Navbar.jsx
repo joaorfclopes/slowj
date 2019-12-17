@@ -1,36 +1,9 @@
 import React from "react";
 import logo from "../assets/svg/logo_white.svg";
-import $ from "jquery";
 
 export default class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isDesktop: true,
-      isMobile: false
-    };
-  }
-  resize() {
-    const screenWidth = $(window).width();
-    if (screenWidth > 700) {
-      this.setState({ isDesktop: true, isMobile: false });
-    } else {
-      this.setState({ isDesktop: false, isMobile: true });
-    }
-  }
-  updateDimensions = () => {
-    this.resize();
-  };
-  componentDidMount() {
-    this.resize();
-    window.addEventListener("resize", this.updateDimensions);
-  }
-  componentWillUnmount() {
-    this.resize();
-    window.removeEventListener("resize", this.updateDimensions);
-  }
   render() {
-    if (this.state.isDesktop === true && this.state.isMobile === false) {
+    if (this.props.isDesktop === true && this.props.isMobile === false) {
       return (
         <div className="navbar">
           <div className="navbarContainer navbarContainerDesktop">
@@ -41,17 +14,44 @@ export default class Navbar extends React.Component {
             </div>
             <div className="navLinks navLinksDesktop">
               <ul className="links linksDesktop">
-                <li className="link linkDesktop linkMargin homeLink active">
+                <li
+                  className="link linkDesktop linkMargin homeLink"
+                  id={
+                    this.props.home === true &&
+                    this.props.bio === false &&
+                    this.props.media === false
+                      ? "active"
+                      : null
+                  }
+                >
                   <a className="linkTo" href="/">
                     Home
                   </a>
                 </li>
-                <li className="link linkDesktop bioLink linkMargin">
+                <li
+                  className="link linkDesktop bioLink linkMargin"
+                  id={
+                    this.props.home === false &&
+                    this.props.bio === true &&
+                    this.props.media === false
+                      ? "active"
+                      : null
+                  }
+                >
                   <a className="linkTo" href="/bio">
                     Bio
                   </a>
                 </li>
-                <li className="link linkDesktop mediaLink">
+                <li
+                  className="link linkDesktop mediaLink"
+                  id={
+                    this.props.home === false &&
+                    this.props.bio === false &&
+                    this.props.media === true
+                      ? "active"
+                      : null
+                  }
+                >
                   <a className="linkTo" href="/media">
                     Media
                   </a>
@@ -62,7 +62,7 @@ export default class Navbar extends React.Component {
         </div>
       );
     }
-    if (this.state.isDesktop === false && this.state.isMobile === true) {
+    if (this.props.isDesktop === false && this.props.isMobile === true) {
       return (
         <div className="navbar">
           <div className="navbarContainer navbarContainerMobile">

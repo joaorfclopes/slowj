@@ -10,7 +10,13 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="home view">
-        <Navbar />
+        <Navbar
+          isDesktop={this.props.isDesktop}
+          isMobile={this.props.isMobile}
+          home={true}
+          bio={false}
+          media={false}
+        />
         <Section1 />
         <Section2 />
         <Section3 />

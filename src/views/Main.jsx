@@ -16,20 +16,48 @@ $(window).scroll(function() {
 });
 
 export default class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isDesktop: true,
+      isMobile: false
+    };
+  }
+  resize() {
+    const screenWidth = $(window).width();
+    if (screenWidth > 700) {
+      this.setState({ isDesktop: true, isMobile: false });
+    } else {
+      this.setState({ isDesktop: false, isMobile: true });
+    }
+  }
+  updateDimensions = () => {
+    this.resize();
+  };
+  componentDidMount() {
+    this.resize();
+    window.addEventListener("resize", this.updateDimensions);
+  }
+  componentWillUnmount() {
+    this.resize();
+    window.removeEventListener("resize", this.updateDimensions);
+  }
   render() {
+    const isDesktop = this.state.isDesktop;
+    const isMobile = this.state.isMobile;
     return (
       <div className="main" id="outerContainer">
         <main id="pageWrap">
           <Router>
             <Switch>
               <Route exact path="/">
-                <Home />
+                <Home isDesktop={isDesktop} isMobile={isMobile} />
               </Route>
               <Route path="/bio">
-                <Bio />
+                <Bio isDesktop={isDesktop} isMobile={isMobile} />
               </Route>
               <Route path="/media">
-                <Media />
+                <Media isDesktop={isDesktop} isMobile={isMobile} />
               </Route>
             </Switch>
           </Router>
