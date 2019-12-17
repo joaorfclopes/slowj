@@ -4,6 +4,7 @@ import Bio from "./Bio";
 import Media from "./Media";
 import $ from "jquery";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
 
 $(window).scroll(function() {
   if ($(window).scrollTop() >= 100) {
@@ -60,6 +61,10 @@ export default class Main extends React.Component {
             </Route>
           </Switch>
         </Router>
+        <ScrollUpButton
+          EasingType="linear"
+          ShowAtPosition={400}
+        ></ScrollUpButton>
       </div>
     );
   }
