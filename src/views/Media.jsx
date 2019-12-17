@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Section1 from "../components/media/Section1";
 import Footer from "../components/Footer";
 
 export default class Media extends React.Component {
@@ -13,7 +14,7 @@ export default class Media extends React.Component {
           bio={false}
           media={true}
         />
-        <h1>Media</h1>
+        <Section1 />
         <Footer />
       </div>
     );

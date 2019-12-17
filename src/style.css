@@ -132,6 +132,18 @@ body {
   height: 100vh;
   background: #f8f8f8;
 }
+/****************BIO****************/
+/*SECTION 1*/
+.bioSection1 {
+  height: 100vh;
+  background: #121212;
+}
+/****************MEDIA****************/
+/*SECTION 1*/
+.mediaSection1 {
+  height: 100vh;
+  background: #f8f8f8;
+}
 /****************FOOTER****************/
 .footer {
   height: 30vh;

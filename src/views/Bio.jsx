@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Section1 from "../components/bio/Section1";
 import Footer from "../components/Footer";
 
 export default class Bio extends React.Component {
@@ -13,7 +14,7 @@ export default class Bio extends React.Component {
           bio={true}
           media={false}
         />
-        <h1>Bio</h1>
+        <Section1 />
         <Footer />
       </div>
     );
