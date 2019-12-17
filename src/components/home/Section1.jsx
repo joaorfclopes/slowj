@@ -1,5 +1,7 @@
 import React from "react";
 
-export default function Section1() {
-  return <div className="homeSection1"></div>;
+export default class Section1 extends React.Component {
+  render() {
+    return <div className="homeSection1"></div>;
+  }
 }

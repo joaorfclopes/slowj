@@ -47,6 +47,7 @@ body {
   padding-top: 55px;
 }
 .navbar {
+  top: 0;
   position: fixed;
   height: 55px;
   background: #0a0a0a;
@@ -88,6 +89,15 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.link:hover {
+  transition: 0.4s;
+  opacity: 1;
+}
+.active {
+  opacity: 1;
 }
 .linkMargin {
   margin-right: 30px;

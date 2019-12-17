@@ -1,9 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import Home from "./Home";
 import Bio from "./Bio";
 import Media from "./Media";
-import Footer from "../components/Footer";
 import $ from "jquery";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -17,24 +15,26 @@ $(window).scroll(function() {
   }
 });
 
-export default function Main() {
-  return (
-    <div className="main">
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/bio">
-            <Bio />
-          </Route>
-          <Route path="/media">
-            <Media />
-          </Route>
-        </Switch>
-        <Footer />
-      </Router>
-    </div>
-  );
+export default class Main extends React.Component {
+  render() {
+    return (
+      <div className="main" id="outerContainer">
+        <main id="pageWrap">
+          <Router>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/bio">
+                <Bio />
+              </Route>
+              <Route path="/media">
+                <Media />
+              </Route>
+            </Switch>
+          </Router>
+        </main>
+      </div>
+    );
+  }
 }

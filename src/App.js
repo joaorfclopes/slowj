@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import Main from "./views/Main";
 
 let body = document.getElementsByTagName("body")[0];
 
-export default class App extends Component {
+export default class App extends React.Component {
   load() {
     body.style.overflow = "hidden";
     this.props.showLoader();
