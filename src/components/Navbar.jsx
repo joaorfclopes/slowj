@@ -1,9 +1,19 @@
 import React from "react";
 import logo from "../assets/svg/logo_white.svg";
 import menuLogo from "../assets/svg/menu.svg";
+import $ from "jquery";
 
 export default class Navbar extends React.Component {
+  openMenu() {
+    $(".sidenav").css("width", "270px");
+  }
   render() {
+    $(document).mouseup(function(e) {
+      var container = $(".sidenav");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        $(".sidenav").css("width", "0px");
+      }
+    });
     if (this.props.isDesktop === true && this.props.isMobile === false) {
       return (
         <div className="navbar navbarDesktop">
@@ -73,57 +83,59 @@ export default class Navbar extends React.Component {
               </a>
             </div>
             <div className="navLinks navLinksMobile">
-              <div className="menu">
+              <div className="menu" onClick={this.openMenu}>
                 <div className="menuTitle">Menu</div>
                 <div className="menuImage">
                   <img className="menuLogo" src={menuLogo} alt="menuLogo" />
                 </div>
               </div>
-              <ul className="links linksMobile">
-                <li
-                  className="link linkMobile homeLink"
-                  id={
-                    this.props.home === true &&
-                    this.props.bio === false &&
-                    this.props.media === false
-                      ? "active"
-                      : null
-                  }
-                >
-                  <a className="linkTo linkToMobile" href="/">
-                    Home
-                  </a>
-                </li>
-                <li
-                  className="link linkMobile bioLink"
-                  id={
-                    this.props.home === false &&
-                    this.props.bio === true &&
-                    this.props.media === false
-                      ? "active"
-                      : null
-                  }
-                >
-                  <a className="linkTo linkToMobile" href="/bio">
-                    Bio
-                  </a>
-                </li>
-                <li
-                  className="link linkMobile mediaLink"
-                  id={
-                    this.props.home === false &&
-                    this.props.bio === false &&
-                    this.props.media === true
-                      ? "active"
-                      : null
-                  }
-                >
-                  <a className="linkTo linkToMobile" href="/media">
-                    Media
-                  </a>
-                </li>
-              </ul>
             </div>
+          </div>
+          <div className="sidenav">
+            <ul className="links linksMobile">
+              <li
+                className="link linkMobile linkMargin linkMarginMobile homeLink"
+                id={
+                  this.props.home === true &&
+                  this.props.bio === false &&
+                  this.props.media === false
+                    ? "active"
+                    : null
+                }
+              >
+                <a className="linkTo linkToMobile" href="/">
+                  Home
+                </a>
+              </li>
+              <li
+                className="link linkMobile linkMargin linkMarginMobile bioLink"
+                id={
+                  this.props.home === false &&
+                  this.props.bio === true &&
+                  this.props.media === false
+                    ? "active"
+                    : null
+                }
+              >
+                <a className="linkTo linkToMobile" href="/bio">
+                  Bio
+                </a>
+              </li>
+              <li
+                className="link linkMobile mediaLink"
+                id={
+                  this.props.home === false &&
+                  this.props.bio === false &&
+                  this.props.media === true
+                    ? "active"
+                    : null
+                }
+              >
+                <a className="linkTo linkToMobile" href="/media">
+                  Media
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       );
