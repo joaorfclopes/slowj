@@ -166,6 +166,9 @@ body {
   color: #0a0a0a;
   transition: 0.4s;
 }
+.sidenavOpened {
+  width: 270px;
+}
 .linksMobile {
   list-style-type: none;
   padding-top: 20px;

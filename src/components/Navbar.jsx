@@ -5,13 +5,13 @@ import $ from "jquery";
 
 export default class Navbar extends React.Component {
   openMenu() {
-    $(".sidenav").css("width", "270px");
+    $(".sidenav").addClass("sidenavOpened");
   }
   render() {
     $(document).mouseup(function(e) {
       var container = $(".sidenav");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
-        $(".sidenav").css("width", "0px");
+        $(".sidenav").removeClass("sidenavOpened");
       }
     });
     if (this.props.isDesktop === true && this.props.isMobile === false) {
