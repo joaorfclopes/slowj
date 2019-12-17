@@ -25,7 +25,7 @@ export default class Main extends React.Component {
   }
   resize() {
     const screenWidth = $(window).width();
-    if (screenWidth > 700) {
+    if (screenWidth > 1000) {
       this.setState({ isDesktop: true, isMobile: false });
     } else {
       this.setState({ isDesktop: false, isMobile: true });
@@ -46,22 +46,20 @@ export default class Main extends React.Component {
     const isDesktop = this.state.isDesktop;
     const isMobile = this.state.isMobile;
     return (
-      <div className="main" id="outerContainer">
-        <main id="pageWrap">
-          <Router>
-            <Switch>
-              <Route exact path="/">
-                <Home isDesktop={isDesktop} isMobile={isMobile} />
-              </Route>
-              <Route path="/bio">
-                <Bio isDesktop={isDesktop} isMobile={isMobile} />
-              </Route>
-              <Route path="/media">
-                <Media isDesktop={isDesktop} isMobile={isMobile} />
-              </Route>
-            </Switch>
-          </Router>
-        </main>
+      <div className="main">
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home isDesktop={isDesktop} isMobile={isMobile} />
+            </Route>
+            <Route path="/bio">
+              <Bio isDesktop={isDesktop} isMobile={isMobile} />
+            </Route>
+            <Route path="/media">
+              <Media isDesktop={isDesktop} isMobile={isMobile} />
+            </Route>
+          </Switch>
+        </Router>
       </div>
     );
   }

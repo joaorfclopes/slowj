@@ -1,4 +1,4 @@
-/****************GENERAL****************/
+/*-------------------------------------------------------------------------GENERAL-------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap");
 html {
   -ms-overflow-style: none;
@@ -42,7 +42,6 @@ body {
 .loaderIcon > img {
   width: 12vh;
 }
-/****************NAVBAR****************/
 .view {
   padding-top: 55px;
 }
@@ -73,18 +72,23 @@ body {
   width: 35px;
   cursor: pointer;
 }
-.navLinks {
+#active {
+  opacity: 1;
+}
+/*-------------------------------------------------------------------------DESKTOP-------------------------------------------------------------------------*/
+/****************NAVBAR****************/
+.navLinksDesktop {
   float: right;
   text-align: right;
   width: 50%;
   padding-top: 10px;
 }
-.links {
+.linksDesktop {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.link {
+.linkDesktop {
   display: inline;
   font-weight: 700;
   text-transform: uppercase;
@@ -92,17 +96,14 @@ body {
   opacity: 0.5;
   transition: 0.4s;
 }
-.link:hover {
+.linkDesktop:hover {
   transition: 0.4s;
   opacity: 1;
 }
-#active {
-  opacity: 1;
-}
-.linkMargin {
+.linkMarginDesktop {
   margin-right: 30px;
 }
-.linkTo {
+.linkToDesktop {
   color: inherit;
   text-decoration: inherit;
 }
@@ -133,4 +134,25 @@ body {
 .footer {
   height: 30vh;
   background: #f4f4f4;
+}
+/*-------------------------------------------------------------------------MOBILE-------------------------------------------------------------------------*/
+/****************NAVBAR****************/
+.menu {
+  float: right;
+  text-align: right;
+  width: 90px;
+}
+.menuTitle {
+  float: left;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.menuLogo {
+  padding-top: 5px;
+  width: 30px;
+  float: right;
+}
+.linksMobile {
+  display: none;
 }
