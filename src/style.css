@@ -151,21 +151,46 @@ body {
   width: 120px;
   margin: auto;
 }
-/*SECTION 2*/
-.homeSection2 {
-  height: 100vh;
-  background: #121212;
-}
+/*SECTION 2, 3 and 4*/
 .title {
   width: 100%;
   text-align: center;
 }
-/*SECTION 3*/
+.cover {
+  width: 100%;
+  text-align: center;
+}
+.listen {
+  width: 100%;
+  text-align: center;
+}
+.titleDesktop {
+  padding-top: 75px;
+}
+.coverDesktop {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.listenDesktop {
+  padding-bottom: 75px;
+}
+.titleMobile {
+  padding-top: 15vw;
+}
+.coverMobile {
+  padding-top: 15vw;
+  padding-bottom: 15vw;
+}
+.listenMobile {
+  padding-bottom: 15vw;
+}
+.homeSection2 {
+  background: #121212;
+}
 .homeSection3 {
   height: 100vh;
   background: #c4c4c4;
 }
-/*SECTION 4*/
 .homeSection4 {
   height: 100vh;
   background: #f8f8f8;
@@ -213,9 +238,16 @@ body {
 /****************HOME****************/
 /*SECTION 2*/
 .taosdTitleImageDesktop {
-  position: relative;
-  top: 75px;
   width: 500px;
+}
+.taosdCoverImageDesktop {
+  width: 400px;
+}
+.taosdListenImagesDesktop {
+  width: 500px;
+  height: 75px;
+  margin: auto;
+  background: white;
 }
 /*-------------------------------------------------------------------------MOBILE-------------------------------------------------------------------------*/
 /****************NAVBAR****************/
@@ -272,7 +304,14 @@ body {
 /****************HOME****************/
 /*SECTION 2*/
 .taosdTitleImageMobile {
-  position: relative;
-  top: 15vw;
-  width: 85vw; 
+  width: 85vw;
+}
+.taosdCoverImageMobile {
+  width: 70vw;
+}
+.taosdListenImagesMobile {
+  width: 85vw;
+  height: 15vw;
+  margin: auto;
+  background: white;
 }
