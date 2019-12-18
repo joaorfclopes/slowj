@@ -251,8 +251,10 @@ body {
   transition: 0.4s;
   opacity: 1;
 }
+.pushLeft {
+  transition: 0.4s;
+}
 .slideLeft {
   transform: translateX(-270px);
   opacity: 0.5;
-  transition: 0.4s;
 }
