@@ -8,6 +8,8 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none !important;
   font-family: "Roboto Condensed", sans-serif;
+  background: #0a0a0a;
+  color: white;
 }
 html::-webkit-scrollbar {
   width: 0 !important;
@@ -84,7 +86,6 @@ body {
   transition: 0.4s;
 }
 .button1Text {
-  color: white;
   letter-spacing: 2px;
   padding-top: 12px;
 }
