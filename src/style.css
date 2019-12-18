@@ -116,6 +116,7 @@ body {
   float: left;
   text-align: left;
   width: 50%;
+  transition: 0.4s;
 }
 .logo {
   width: 35px;
@@ -211,6 +212,7 @@ body {
   float: right;
   text-align: right;
   width: 90px;
+  transition: 0.4s;
 }
 .menuTitle {
   float: left;
@@ -229,7 +231,7 @@ body {
   top: 0;
   right: 0;
   width: 0px;
-  height: 100vh;
+  height: 100%;
   background: white;
   color: #0a0a0a;
   transition: 0.4s;
@@ -252,4 +254,7 @@ body {
 .linkMobile:active {
   transition: 0.4s;
   opacity: 1;
+}
+.slideLeft {
+  transform: translateX(-270px);
 }
