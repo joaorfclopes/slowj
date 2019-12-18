@@ -14,7 +14,9 @@ export default class Media extends React.Component {
           bio={false}
           media={true}
         />
-        <Section1 />
+        <div className="pushLeft">
+          <Section1 />
+        </div>
         <Footer />
       </div>
     );

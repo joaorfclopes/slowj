@@ -14,7 +14,9 @@ export default class Bio extends React.Component {
           bio={true}
           media={false}
         />
-        <Section1 />
+        <div className="pushLeft">
+          <Section1 />
+        </div>
         <Footer />
       </div>
     );
