@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../assets/svg/logo_white.svg";
-import menuLogo from "../assets/svg/menu.svg";
+import logo from "../../assets/svg/logo_white.svg";
+import menuLogo from "../../assets/svg/menu.svg";
 import $ from "jquery";
 
 export default class Navbar extends React.Component {

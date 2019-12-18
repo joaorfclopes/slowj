@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/general/Navbar";
 import Section1 from "../components/media/Section1";
-import Footer from "../components/Footer";
+import Footer from "../components/general/Footer";
 
 export default class Media extends React.Component {
   render() {

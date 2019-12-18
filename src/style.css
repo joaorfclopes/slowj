@@ -1,4 +1,5 @@
 /*-------------------------------------------------------------------------GENERAL-------------------------------------------------------------------------*/
+/*HTML ELEMENTS*/
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap");
 * {
   outline: none !important;
@@ -16,6 +17,7 @@ html::-webkit-scrollbar {
 body {
   margin: 0;
 }
+/*LOADER*/
 .loader {
   position: fixed;
   width: 100%;
@@ -47,9 +49,7 @@ body {
 .loaderIcon > img {
   width: 12vh;
 }
-.view {
-  padding-top: 55px;
-}
+/*BUTTONS*/
 .ScrollUpButton__Container {
   outline: none;
   border-radius: 50%;
@@ -72,7 +72,27 @@ body {
 .ScrollUpButton__Toggled:active {
   opacity: 1 !important;
 }
+.button1 {
+  width: 120px;
+  height: 45px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.4s;
+}
+.button1:hover,
+.button1:active {
+  border: 1px solid rgba(255, 255, 255, 1);
+  transition: 0.4s;
+}
+.button1Text {
+  letter-spacing: 2px;
+  padding-top: 12px;
+}
 /****************NAVBAR****************/
+.view {
+  padding-top: 55px;
+}
 .navbar {
   top: 0;
   position: fixed;
@@ -80,6 +100,7 @@ body {
   background: #0a0a0a;
   color: white;
   transition: 0.4s;
+  z-index: 999;
 }
 .navbarContainer {
   height: 55px;
@@ -112,34 +133,6 @@ body {
   height: 30vh;
   background: #f4f4f4;
 }
-/*-------------------------------------------------------------------------DESKTOP-------------------------------------------------------------------------*/
-/****************NAVBAR****************/
-.navLinksDesktop {
-  float: right;
-  text-align: right;
-  width: 50%;
-  padding-top: 10px;
-}
-.linksDesktop {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.linkDesktop {
-  display: inline;
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: 0.4s;
-}
-.linkDesktop:hover {
-  transition: 0.4s;
-  opacity: 1;
-}
-.linkMarginDesktop {
-  margin-right: 30px;
-}
 /****************HOME****************/
 /*SECTION 1*/
 .homeSection1 {
@@ -147,6 +140,15 @@ body {
   background: url("./assets/images/background.jpg") no-repeat;
   background-size: cover;
   background-position: 50% 40%;
+}
+.entrarButtonContainer {
+  position: relative;
+  top: 75vh;
+  width: 100%;
+}
+.entrarButton {
+  width: 120px;
+  margin: auto;
 }
 /*SECTION 2*/
 .homeSection2 {
@@ -174,6 +176,34 @@ body {
 .mediaSection1 {
   height: 100vh;
   background: #f8f8f8;
+}
+/*-------------------------------------------------------------------------DESKTOP-------------------------------------------------------------------------*/
+/****************NAVBAR****************/
+.navLinksDesktop {
+  float: right;
+  text-align: right;
+  width: 50%;
+  padding-top: 10px;
+}
+.linksDesktop {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.linkDesktop {
+  display: inline;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.linkDesktop:hover {
+  transition: 0.4s;
+  opacity: 1;
+}
+.linkMarginDesktop {
+  margin-right: 30px;
 }
 /*-------------------------------------------------------------------------MOBILE-------------------------------------------------------------------------*/
 /****************NAVBAR****************/
