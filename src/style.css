@@ -92,7 +92,6 @@ body {
 /****************NAVBAR****************/
 .view {
   padding-top: 55px;
-  transition: 0.4s;
 }
 .navbar {
   top: 0;
@@ -258,7 +257,4 @@ body {
 }
 .slideLeft {
   transform: translateX(-270px);
-}
-.slideRight {
-  transform: translateX(270px);
 }
