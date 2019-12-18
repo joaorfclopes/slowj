@@ -53,7 +53,7 @@ body {
 .ScrollUpButton__Container {
   outline: none;
   border-radius: 50%;
-  z-index: 998 !important;
+  z-index: 999 !important;
   background: white !important;
   text-align: center;
   border: 2px solid red;
