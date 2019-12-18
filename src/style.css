@@ -156,6 +156,10 @@ body {
   height: 100vh;
   background: #121212;
 }
+.title {
+  width: 100%;
+  text-align: center;
+}
 /*SECTION 3*/
 .homeSection3 {
   height: 100vh;
@@ -205,6 +209,13 @@ body {
 }
 .linkMarginDesktop {
   margin-right: 30px;
+}
+/****************HOME****************/
+/*SECTION 2*/
+.taosdTitleImageDesktop {
+  position: relative;
+  top: 75px;
+  width: 500px;
 }
 /*-------------------------------------------------------------------------MOBILE-------------------------------------------------------------------------*/
 /****************NAVBAR****************/
@@ -257,4 +268,11 @@ body {
 .slideLeft {
   transform: translateX(-270px);
   opacity: 0.5;
+}
+/****************HOME****************/
+/*SECTION 2*/
+.taosdTitleImageMobile {
+  position: relative;
+  top: 15vw;
+  width: 85vw; 
 }
