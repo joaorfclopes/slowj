@@ -17,11 +17,13 @@ export default class Home extends React.Component {
           bio={false}
           media={false}
         />
-        <Section1 />
-        <Section2 />
-        <Section3 />
-        <Section4 />
-        <Footer />
+        <div className="pushLeft">
+          <Section1 />
+          <Section2 />
+          <Section3 />
+          <Section4 />
+          <Footer />
+        </div>
       </div>
     );
   }

@@ -5,17 +5,19 @@ import $ from "jquery";
 
 export default class Navbar extends React.Component {
   openMenu() {
-    $(".sidenav").addClass("sidenavOpened");
-    $(".menu").addClass("slideLeft");
+    $(".sidenav").css("width", "270px");
     $(".navLogo").addClass("slideLeft");
+    $(".menu").addClass("slideLeft");
+    $(".pushLeft").addClass("slideLeft");
   }
   render() {
     $(document).mouseup(function(e) {
       var container = $(".sidenav");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
-        $(".sidenav").removeClass("sidenavOpened");
-        $(".menu").removeClass("slideLeft");
+        $(".sidenav").css("width", "0px");
         $(".navLogo").removeClass("slideLeft");
+        $(".menu").removeClass("slideLeft");
+        $(".pushLeft").removeClass("slideLeft");
       }
     });
     if (this.props.isDesktop === true && this.props.isMobile === false) {

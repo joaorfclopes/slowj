@@ -226,18 +226,14 @@ body {
   float: right;
 }
 .sidenav {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  right: 0;
   width: 0px;
   height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
   background: white;
   color: #0a0a0a;
   transition: 0.4s;
-}
-.sidenavOpened {
-  width: 270px;
 }
 .linksMobile {
   list-style-type: none;
@@ -257,4 +253,6 @@ body {
 }
 .slideLeft {
   transform: translateX(-270px);
+  opacity: 0.5;
+  transition: 0.4s;
 }
