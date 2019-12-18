@@ -63,7 +63,7 @@ export default class Main extends React.Component {
         </Router>
         <ScrollUpButton
           EasingType="linear"
-          ShowAtPosition={400}
+          ShowAtPosition={200}
         ></ScrollUpButton>
       </div>
     );
