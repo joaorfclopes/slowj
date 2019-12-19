@@ -83,6 +83,12 @@ body {
 .button1:hover,
 .button1:active {
   border: 1px solid rgba(255, 255, 255, 1);
+  background: white;
+  transition: 0.4s;
+}
+.button1:hover .button1Text,
+.button1:active .button1Text {
+  color: #0a0a0a;
   transition: 0.4s;
 }
 .button1Text {
@@ -165,27 +171,32 @@ body {
   text-align: center;
 }
 .titleDesktop {
-  padding-top: 75px;
+  padding-top: 90px;
 }
 .coverDesktop {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 .listenDesktop {
-  padding-bottom: 75px;
+  padding-bottom: 90px;
 }
 .titleMobile {
-  padding-top: 15vw;
+  padding-top: 11vw;
 }
 .coverMobile {
-  padding-top: 15vw;
-  padding-bottom: 15vw;
+  padding-top: 11vw;
+  padding-bottom: 11vw;
 }
 .listenMobile {
-  padding-bottom: 15vw;
+  padding-bottom: 11vw;
 }
 .homeSection2 {
   background: #121212;
+}
+.taosdListenButtonBox {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .homeSection3 {
   height: 100vh;
@@ -243,11 +254,8 @@ body {
 .taosdCoverImageDesktop {
   width: 400px;
 }
-.taosdListenImagesDesktop {
-  width: 500px;
-  height: 75px;
-  margin: auto;
-  background: white;
+.taosdListenButtonDesktop {
+  width: 150px;
 }
 /*-------------------------------------------------------------------------MOBILE-------------------------------------------------------------------------*/
 /****************NAVBAR****************/
@@ -309,9 +317,6 @@ body {
 .taosdCoverImageMobile {
   width: 70vw;
 }
-.taosdListenImagesMobile {
-  width: 85vw;
-  height: 15vw;
-  margin: auto;
-  background: white;
+.taosdListenButtonMobile {
+  width: 20vw;
 }

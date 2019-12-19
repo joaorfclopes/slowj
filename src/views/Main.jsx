@@ -26,7 +26,7 @@ export default class Main extends React.Component {
   }
   resize() {
     const screenWidth = $(window).width();
-    if (screenWidth >= 800) {
+    if (screenWidth >= 700) {
       this.setState({ isDesktop: true, isMobile: false });
     } else {
       this.setState({ isDesktop: false, isMobile: true });
