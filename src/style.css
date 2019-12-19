@@ -69,7 +69,8 @@ body {
   bottom: 30px !important;
 }
 .ScrollUpButton__Toggled:hover,
-.ScrollUpButton__Toggled:active {
+.ScrollUpButton__Toggled:active,
+.ScrollUpButton__Toggled:focus  {
   opacity: 1 !important;
 }
 .button1 {
@@ -81,13 +82,15 @@ body {
   transition: 0.4s;
 }
 .button1:hover,
-.button1:active {
+.button1:active,
+.button1:focus {
   border: 1px solid rgba(255, 255, 255, 1);
   background: white;
   transition: 0.4s;
 }
 .button1:hover .button1Text,
-.button1:active .button1Text {
+.button1:active .button1Text,
+.button1:focus .button1Text {
   color: #0a0a0a;
   transition: 0.4s;
 }
@@ -197,6 +200,14 @@ body {
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.taosdListenButtonBox:hover, 
+.taosdListenButtonBox:active,
+.taosdListenButtonBox:focus  {
+  opacity: 1;
+  transition: 0.4s;
 }
 .homeSection3 {
   height: 100vh;
@@ -239,7 +250,9 @@ body {
   opacity: 0.5;
   transition: 0.4s;
 }
-.linkDesktop:hover {
+.linkDesktop:hover,
+.linkDesktop:active,
+.linkDesktop:focus {
   transition: 0.4s;
   opacity: 1;
 }
@@ -255,7 +268,7 @@ body {
   width: 400px;
 }
 .taosdListenButtonDesktop {
-  width: 150px;
+  width: 130px;
 }
 /*-------------------------------------------------------------------------MOBILE-------------------------------------------------------------------------*/
 /****************NAVBAR****************/
