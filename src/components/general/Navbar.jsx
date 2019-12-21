@@ -10,6 +10,12 @@ export default class Navbar extends React.Component {
     $(".menu").addClass("slideLeft");
     $(".pushLeft").addClass("slideLeft");
   }
+  closeMenu() {
+    $(".sidenav").css("width", "0px");
+    $(".navLogo").removeClass("slideLeft");
+    $(".menu").removeClass("slideLeft");
+    $(".pushLeft").removeClass("slideLeft");
+  }
   render() {
     $(document).mouseup(function(e) {
       var container = $(".sidenav");
@@ -98,6 +104,9 @@ export default class Navbar extends React.Component {
             </div>
           </div>
           <div className="sidenav">
+            <div className="closeSidenav" onClick={this.closeMenu}>
+              &times;
+            </div>
             <ul className="links linksMobile">
               <li
                 className="link linkMobile linkMargin linkMarginMobile homeLink"

@@ -273,9 +273,7 @@ body {
   opacity: 0.5;
   transition: 0.4s;
 }
-.taosdListenButtonBoxDesktop:hover,
-.taosdListenButtonBoxDesktop:active,
-.taosdListenButtonBoxDesktop:focus {
+.taosdListenButtonBoxDesktop:hover {
   opacity: 1;
   transition: 0.4s;
 }
@@ -306,6 +304,10 @@ body {
   background: white;
   color: #0a0a0a;
   transition: 0.4s;
+}
+.closeSidenav {
+  font-size: 30px;
+  margin-left: 10px;
 }
 .linksMobile {
   list-style-type: none;
