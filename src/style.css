@@ -206,16 +206,6 @@ body {
 }
 .taosdListenButtonBox {
   display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-  opacity: 0.5;
-  transition: 0.4s;
-}
-.taosdListenButtonBox:hover,
-.taosdListenButtonBox:active,
-.taosdListenButtonBox:focus {
-  opacity: 1;
-  transition: 0.4s;
 }
 .homeSection3 {
   height: 100vh;
@@ -252,7 +242,6 @@ body {
 }
 .linkDesktop {
   display: inline;
-  font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
   opacity: 0.5;
@@ -278,6 +267,18 @@ body {
 .taosdListenButtonDesktop {
   width: 130px;
 }
+.taosdListenButtonBoxDesktop {
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.taosdListenButtonBoxDesktop:hover,
+.taosdListenButtonBoxDesktop:active,
+.taosdListenButtonBoxDesktop:focus {
+  opacity: 1;
+  transition: 0.4s;
+}
 /*-------------------------------------------------------------------------MOBILE-------------------------------------------------------------------------*/
 /****************NAVBAR****************/
 .menu {
@@ -290,7 +291,6 @@ body {
   float: left;
   padding-top: 10px;
   text-transform: uppercase;
-  font-weight: 700;
 }
 .menuLogo {
   padding-top: 5px;
@@ -312,7 +312,6 @@ body {
   padding-top: 20px;
 }
 .linkMobile {
-  font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
   opacity: 0.5;
@@ -339,5 +338,9 @@ body {
   width: 70vw;
 }
 .taosdListenButtonMobile {
-  width: 20vw;
+  width: 25vw;
+}
+.taosdListenButtonBoxMobile {
+  margin-left: 10px;
+  margin-right: 10px;
 }

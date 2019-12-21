@@ -46,26 +46,47 @@ export default class Main extends React.Component {
   render() {
     const isDesktop = this.state.isDesktop;
     const isMobile = this.state.isMobile;
-    return (
-      <div className="main">
-        <Router>
-          <Switch>
-            <Route exact path="/">
-              <Home isDesktop={isDesktop} isMobile={isMobile} />
-            </Route>
-            <Route path="/bio">
-              <Bio isDesktop={isDesktop} isMobile={isMobile} />
-            </Route>
-            <Route path="/media">
-              <Media isDesktop={isDesktop} isMobile={isMobile} />
-            </Route>
-          </Switch>
-        </Router>
-        <ScrollUpButton
-          EasingType="linear"
-          ShowAtPosition={200}
-        ></ScrollUpButton>
-      </div>
-    );
+    if (isDesktop === true && isMobile === false) {
+      return (
+        <div className="main">
+          <Router>
+            <Switch>
+              <Route exact path="/">
+                <Home isDesktop={isDesktop} isMobile={isMobile} />
+              </Route>
+              <Route path="/bio">
+                <Bio isDesktop={isDesktop} isMobile={isMobile} />
+              </Route>
+              <Route path="/media">
+                <Media isDesktop={isDesktop} isMobile={isMobile} />
+              </Route>
+            </Switch>
+          </Router>
+          <ScrollUpButton
+            EasingType="linear"
+            ShowAtPosition={200}
+          ></ScrollUpButton>
+        </div>
+      );
+    }
+    if (isDesktop === false && isMobile === true) {
+      return (
+        <div className="main">
+          <Router>
+            <Switch>
+              <Route exact path="/">
+                <Home isDesktop={isDesktop} isMobile={isMobile} />
+              </Route>
+              <Route path="/bio">
+                <Bio isDesktop={isDesktop} isMobile={isMobile} />
+              </Route>
+              <Route path="/media">
+                <Media isDesktop={isDesktop} isMobile={isMobile} />
+              </Route>
+            </Switch>
+          </Router>
+        </div>
+      );
+    }
   }
 }
