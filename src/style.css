@@ -75,9 +75,7 @@ body {
 .ScrollUpButton__Toggled {
   bottom: 30px !important;
 }
-.ScrollUpButton__Toggled:hover,
-.ScrollUpButton__Toggled:active,
-.ScrollUpButton__Toggled:focus {
+.ScrollUpButton__Toggled:hover {
   opacity: 1 !important;
 }
 .button1 {
