@@ -18,7 +18,10 @@ export default class Home extends React.Component {
           media={false}
         />
         <div className="pushLeft">
-          <Section1 />
+          <Section1
+            isDesktop={this.props.isDesktop}
+            isMobile={this.props.isMobile}
+          />
           <Section2
             isDesktop={this.props.isDesktop}
             isMobile={this.props.isMobile}

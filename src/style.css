@@ -68,17 +68,7 @@ body {
   width: 45px !important;
   height: 45px !important;
 }
-.ScrollUpButton__Container > svg {
-  width: 30px !important;
-  margin-top: 5px;
-}
-.ScrollUpButton__Toggled {
-  bottom: 30px !important;
-}
-.ScrollUpButton__Toggled:hover {
-  opacity: 1 !important;
-}
-.button1 {
+.basicButton {
   width: 120px;
   height: 45px;
   text-align: center;
@@ -86,20 +76,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: 0.4s;
 }
-.button1:hover,
-.button1:active,
-.button1:focus {
-  border: 1px solid rgba(255, 255, 255, 1);
-  background: white;
-  transition: 0.4s;
-}
-.button1:hover .button1Text,
-.button1:active .button1Text,
-.button1:focus .button1Text {
-  color: #0a0a0a;
-  transition: 0.4s;
-}
-.button1Text {
+.basicButtonText {
   letter-spacing: 2px;
   padding-top: 12px;
 }
@@ -202,7 +179,7 @@ body {
 .homeSection2 {
   background: #121212;
 }
-.taosdListenButtonBox {
+.listenButtonBox {
   display: inline-block;
 }
 .homeSection3 {
@@ -226,6 +203,29 @@ body {
   background: #f8f8f8;
 }
 /*-------------------------------------------------------------------------DESKTOP-------------------------------------------------------------------------*/
+/*BUTTONS*/
+.ScrollUpButton__Container > svg {
+  width: 30px !important;
+  margin-top: 5px;
+}
+.ScrollUpButton__Toggled {
+  bottom: 30px !important;
+}
+.ScrollUpButton__Toggled:hover {
+  opacity: 1 !important;
+}
+.basicButtonDesktop {
+  transition: 0.4s;
+}
+.basicButtonDesktop:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+  background: white;
+  transition: 0.4s;
+}
+.basicButtonDesktop:hover .basicButtonTextDesktop {
+  color: #0a0a0a;
+  transition: 0.4s;
+}
 /****************NAVBAR****************/
 .navLinksDesktop {
   float: right;
@@ -245,9 +245,7 @@ body {
   opacity: 0.5;
   transition: 0.4s;
 }
-.linkDesktop:hover,
-.linkDesktop:active,
-.linkDesktop:focus {
+.linkDesktop:hover {
   transition: 0.4s;
   opacity: 1;
 }
@@ -262,16 +260,16 @@ body {
 .taosdCoverImageDesktop {
   width: 400px;
 }
-.taosdListenButtonDesktop {
+.listenButtonDesktop {
   width: 130px;
 }
-.taosdListenButtonBoxDesktop {
+.listenButtonBoxDesktop {
   margin-left: 20px;
   margin-right: 20px;
   opacity: 0.5;
   transition: 0.4s;
 }
-.taosdListenButtonBoxDesktop:hover {
+.listenButtonBoxDesktop:hover {
   opacity: 1;
   transition: 0.4s;
 }
@@ -337,10 +335,10 @@ body {
 .taosdCoverImageMobile {
   width: 70vw;
 }
-.taosdListenButtonMobile {
+.listenButtonMobile {
   width: 25vw;
 }
-.taosdListenButtonBoxMobile {
+.listenButtonBoxMobile {
   margin-left: 10px;
   margin-right: 10px;
 }

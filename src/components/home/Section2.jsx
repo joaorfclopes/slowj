@@ -1,9 +1,7 @@
 import React from "react";
+import ListenButtonsSection from "../buttons/ListenButtonsSection";
 import taosdTitle from "../../assets/images/TAOSD-title.png";
 import taosdCover from "../../assets/images/TAOSD-cover.jpg";
-import spotify from "../../assets/images/spotify.png";
-import appleMusic from "../../assets/images/appleMusic.png";
-import googlePlay from "../../assets/images/googlePlay.png";
 
 export default class Section2 extends React.Component {
   render() {
@@ -24,49 +22,13 @@ export default class Section2 extends React.Component {
               alt="The Art Of Slowing Down"
             />
           </div>
-          <div className="taosdListen taosdListenDesktop listen listenDesktop">
-            <div id="taosdListenButtons">
-              <div className="taosdListenButtonBox taosdListenButtonBoxDesktop">
-                <a
-                  href="https://open.spotify.com/album/7nmtqSWbVJBxRbpAZT8I6r"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    className="taosdListenButton taosdListenButtonDesktop"
-                    src={spotify}
-                    alt="Spotify"
-                  />
-                </a>
-              </div>
-              <div className="taosdListenButtonBox taosdListenButtonBoxDesktop">
-                <a
-                  href="https://open.spotify.com/album/7nmtqSWbVJBxRbpAZT8I6r"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    className="taosdListenButton taosdListenButtonDesktop"
-                    src={appleMusic}
-                    alt="Apple Music"
-                  />
-                </a>
-              </div>
-              <div className="taosdListenButtonBox taosdListenButtonBoxDesktop">
-                <a
-                  href="https://open.spotify.com/album/7nmtqSWbVJBxRbpAZT8I6r"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    className="taosdListenButton taosdListenButtonDesktop"
-                    src={googlePlay}
-                    alt="Google Play"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
+          <ListenButtonsSection
+            isDesktop={this.props.isDesktop}
+            isMobile={this.props.isMobile}
+            redirectSpotify="https://open.spotify.com/album/7nmtqSWbVJBxRbpAZT8I6r"
+            redirectAppleMusic="https://music.apple.com/pt/album/the-art-of-slowing-down/1215336873?app=music&ign-mpt=uo%3D4"
+            redirectGooglePlay="https://play.google.com/store/music/album/Slow_J_The_Art_of_Slowing_Down?id=Bs3pnuccst6hzqwg2ccpenivbl4&hl=en"
+          />
         </div>
       );
     }
@@ -87,49 +49,13 @@ export default class Section2 extends React.Component {
               alt="The Art Of Slowing Down"
             />
           </div>
-          <div className="taosdListen taosdListenMobile listen listenMobile">
-            <div id="taosdListenButtons">
-              <div className="taosdListenButtonBox taosdListenButtonBoxMobile">
-                <a
-                  href="https://open.spotify.com/album/7nmtqSWbVJBxRbpAZT8I6r"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    className="taosdListenButton taosdListenButtonMobile"
-                    src={spotify}
-                    alt="Spotify"
-                  />
-                </a>
-              </div>
-              <div className="taosdListenButtonBox taosdListenButtonBoxMobile">
-                <a
-                  href="https://open.spotify.com/album/7nmtqSWbVJBxRbpAZT8I6r"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    className="taosdListenButton taosdListenButtonMobile"
-                    src={appleMusic}
-                    alt="Apple Music"
-                  />
-                </a>
-              </div>
-              <div className="taosdListenButtonBox taosdListenButtonBoxMobile">
-                <a
-                  href="https://open.spotify.com/album/7nmtqSWbVJBxRbpAZT8I6r"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    className="taosdListenButton taosdListenButtonMobile"
-                    src={googlePlay}
-                    alt="Google Play"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
+          <ListenButtonsSection
+            isDesktop={this.props.isDesktop}
+            isMobile={this.props.isMobile}
+            redirectSpotify="https://open.spotify.com/album/7nmtqSWbVJBxRbpAZT8I6r"
+            redirectAppleMusic="https://music.apple.com/pt/album/the-art-of-slowing-down/1215336873?app=music&ign-mpt=uo%3D4"
+            redirectGooglePlay="https://play.google.com/store/music/album/Slow_J_The_Art_of_Slowing_Down?id=Bs3pnuccst6hzqwg2ccpenivbl4&hl=en"
+          />
         </div>
       );
     }

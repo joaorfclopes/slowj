@@ -1,6 +1,6 @@
 import React from "react";
 import $ from "jquery";
-import Button1 from "../buttons/Button1";
+import BasicButton from "../buttons/BasicButton";
 
 export default class Section1 extends React.Component {
   scrollToSection2() {
@@ -17,7 +17,11 @@ export default class Section1 extends React.Component {
       <div className="homeSection1">
         <div className="entrarButtonContainer">
           <div className="entrarButton" onClick={this.scrollToSection2}>
-            <Button1 text="Entrar" />
+            <BasicButton
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              text="Entrar"
+            />
           </div>
         </div>
       </div>
