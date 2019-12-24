@@ -1,5 +1,5 @@
 import React from "react";
-import ListenButton from "./ListenButton";
+import ListenButton from "../buttons/ListenButton";
 import spotify from "../../assets/images/spotify.png";
 import appleMusic from "../../assets/images/appleMusic.png";
 import googlePlay from "../../assets/images/googlePlay.png";

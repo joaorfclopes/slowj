@@ -156,39 +156,17 @@ body {
   width: 100%;
   text-align: center;
 }
-.titleDesktop {
-  padding-top: 90px;
-}
-.coverDesktop {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-.listenDesktop {
-  padding-bottom: 90px;
-}
-.titleMobile {
-  padding-top: 11vw;
-}
-.coverMobile {
-  padding-top: 11vw;
-  padding-bottom: 11vw;
-}
-.listenMobile {
-  padding-bottom: 11vw;
+.listenButtonBox {
+  display: inline-block;
 }
 .homeSection2 {
   background: #121212;
 }
-.listenButtonBox {
-  display: inline-block;
-}
 .homeSection3 {
-  height: 100vh;
-  background: #c4c4c4;
+  background: #f8f8f8;
 }
 .homeSection4 {
-  height: 100vh;
-  background: #f8f8f8;
+  background: #c4c4c4;
 }
 /****************BIO****************/
 /*SECTION 1*/
@@ -253,11 +231,11 @@ body {
   margin-right: 30px;
 }
 /****************HOME****************/
-/*SECTION 2*/
-.taosdTitleImageDesktop {
+/*SECTION 2, 3 and 4*/
+.titleImageDesktop {
   width: 500px;
 }
-.taosdCoverImageDesktop {
+.coverImageDesktop {
   width: 400px;
 }
 .listenButtonDesktop {
@@ -266,12 +244,22 @@ body {
 .listenButtonBoxDesktop {
   margin-left: 20px;
   margin-right: 20px;
-  opacity: 0.5;
+  opacity: 1;
   transition: 0.4s;
 }
 .listenButtonBoxDesktop:hover {
-  opacity: 1;
+  opacity: 0.5;
   transition: 0.4s;
+}
+.titleDesktop {
+  padding-top: 90px;
+}
+.coverDesktop {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.listenDesktop {
+  padding-bottom: 90px;
 }
 /*-------------------------------------------------------------------------MOBILE-------------------------------------------------------------------------*/
 /****************NAVBAR****************/
@@ -328,11 +316,11 @@ body {
   opacity: 0.5;
 }
 /****************HOME****************/
-/*SECTION 2*/
-.taosdTitleImageMobile {
+/*SECTION 2, 3 and 4*/
+.titleImageMobile {
   width: 85vw;
 }
-.taosdCoverImageMobile {
+.coverImageMobile {
   width: 70vw;
 }
 .listenButtonMobile {
@@ -341,4 +329,14 @@ body {
 .listenButtonBoxMobile {
   margin-left: 10px;
   margin-right: 10px;
+}
+.titleMobile {
+  padding-top: 11vw;
+}
+.coverMobile {
+  padding-top: 11vw;
+  padding-bottom: 11vw;
+}
+.listenMobile {
+  padding-bottom: 11vw;
 }
