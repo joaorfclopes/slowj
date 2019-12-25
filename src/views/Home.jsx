@@ -34,7 +34,10 @@ export default class Home extends React.Component {
             isDesktop={this.props.isDesktop}
             isMobile={this.props.isMobile}
           />*/}
-          <Footer />
+          <Footer
+            isDesktop={this.props.isDesktop}
+            isMobile={this.props.isMobile}
+          />
         </div>
       </div>
     );

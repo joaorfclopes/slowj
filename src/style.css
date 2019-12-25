@@ -121,11 +121,6 @@ body {
 #active {
   opacity: 1;
 }
-/****************FOOTER****************/
-.footer {
-  height: 30vh;
-  background: #f4f4f4;
-}
 /****************HOME****************/
 /*SECTION 1*/
 .homeSection1 {
@@ -173,8 +168,14 @@ body {
 .contacts {
   text-transform: uppercase;
 }
+.contactsTitle {
+  font-size: 40px;
+}
+.contactTitle {
+  font-size: 25px;
+}
 .contactText {
-  color: #585858;
+  font-size: 15px;
 }
 .homeSection4 {
   background: #c4c4c4;
@@ -190,6 +191,21 @@ body {
 .mediaSection1 {
   height: 100vh;
   background: #f8f8f8;
+}
+/****************FOOTER****************/
+.footer {
+  background: #f4f4f4;
+  text-align: center;
+}
+.socialLink {
+  display: inline-block;
+}
+.creatorTag {
+  color: #868686;
+}
+.joaolopes {
+  cursor: pointer;
+  color: inherit;
 }
 /*-------------------------------------------------------------------------DESKTOP-------------------------------------------------------------------------*/
 /*BUTTONS*/
@@ -255,7 +271,6 @@ body {
 .listenButtonBoxDesktop {
   margin-left: 20px;
   margin-right: 20px;
-  opacity: 1;
   transition: 0.4s;
 }
 .listenButtonBoxDesktop:hover {
@@ -276,7 +291,6 @@ body {
   padding-bottom: 90px;
 }
 .contactsTitleDesktop {
-  font-size: 40px;
   padding-bottom: 50px;
 }
 .contactDesktop {
@@ -315,11 +329,32 @@ body {
     margin-right: 1vw;
   }
 }
-.contactTitleDesktop {
-  font-size: 25px;
+/****************FOOTER****************/
+.footerDesktop {
+  height: 300px;
 }
-.contactTextDesktop {
-  font-size: 15px;
+.socialDesktop {
+  padding-top: 100px;
+}
+.socialLinkDesktop {
+  width: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: 0.4s;
+}
+.socialLinkDesktop:hover {
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.creatorTagDesktop {
+  padding-top: 50px;
+}
+.joaolopesDesktop {
+  transition: 0.4s;
+}
+.joaolopesDesktop:hover {
+  opacity: 0.5;
+  transition: 0.4s;
 }
 /*-------------------------------------------------------------------------MOBILE-------------------------------------------------------------------------*/
 /****************NAVBAR****************/
@@ -374,6 +409,7 @@ body {
 .slideLeft {
   transform: translateX(-270px);
   opacity: 0.5;
+  pointer-events: none;
 }
 /****************HOME****************/
 /*SECTION 2, 3 and 4*/
@@ -407,12 +443,5 @@ body {
   padding-bottom: 5vw;
 }
 .contactsTitleMobile {
-  font-size: 10vw;
   padding-bottom: 7vw;
-}
-.contactTitleMobile {
-  font-size: 6vw;
-}
-.contactTextMobile {
-  font-size: 4vw;
 }
