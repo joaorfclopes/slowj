@@ -446,3 +446,18 @@ body {
 .contactsTitleMobile {
   padding-bottom: 7vw;
 }
+/****************FOOTER****************/
+.footerMobile {
+  height: 60vw;
+}
+.socialMobile {
+  padding-top: 15vw;
+}
+.socialLinkMobile {
+  width: 30px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.creatorTagMobile {
+  padding-top: 15vw;
+}

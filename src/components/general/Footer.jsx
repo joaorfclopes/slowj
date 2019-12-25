@@ -72,7 +72,68 @@ export default class Footer extends React.Component {
       );
     }
     if (this.props.isDesktop === false && this.props.isMobile === true) {
-      return <div></div>;
+      return (
+        <div className="footer footerMobile">
+          <div className="social socialMobile">
+            <div className="socialLink socialLinkMobile">
+              <a
+                href="https://www.facebook.com/SlowJOfficial/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={facebook} alt="link" />
+              </a>
+            </div>
+            <div className="socialLink socialLinkMobile">
+              <a
+                href="https://twitter.com/Slow_J_Music"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={twitter} alt="link" />
+              </a>
+            </div>
+            <div className="socialLink socialLinkMobile">
+              <a
+                href="https://www.instagram.com/slowj_oficial/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={instagram} alt="link" />
+              </a>
+            </div>
+            <div className="socialLink socialLinkMobile">
+              <a
+                href="https://www.youtube.com/SlowJ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={youtube} alt="link" />
+              </a>
+            </div>
+            <div className="socialLink socialLinkMobile">
+              <a
+                href="https://soundcloud.com/slow-j-official"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={soundcloud} alt="link" />
+              </a>
+            </div>
+          </div>
+          <div className="creatorTag creatorTagMobile">
+            &#9400;{" "}
+            <a
+              className="joaolopes joaolopesMobile"
+              href="https://www.instagram.com/joao.lopes.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <u>Joao Lopes</u>
+            </a>
+          </div>
+        </div>
+      );
     }
   }
 }
