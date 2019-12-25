@@ -165,6 +165,17 @@ body {
 .homeSection3 {
   background: #f8f8f8;
 }
+.contactsContainer {
+  color: black;
+  text-align: center;
+  font-family: "Roboto Condensed Bold", sans-serif;
+}
+.contacts {
+  text-transform: uppercase;
+}
+.contactText {
+  color: #585858;
+}
 .homeSection4 {
   background: #c4c4c4;
 }
@@ -261,6 +272,55 @@ body {
 .listenDesktop {
   padding-bottom: 90px;
 }
+.contactsContainerDesktop {
+  padding-bottom: 90px;
+}
+.contactsTitleDesktop {
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+.contactDesktop {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+@media only screen and (max-width: 1585px) {
+  .contactDesktop {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+}
+@media only screen and (max-width: 1220px) {
+  .contactDesktop {
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .contactDesktop {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .contactDesktop {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .contactDesktop {
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+}
+.contactTitleDesktop {
+  font-size: 25px;
+}
+.contactTextDesktop {
+  font-size: 15px;
+}
 /*-------------------------------------------------------------------------MOBILE-------------------------------------------------------------------------*/
 /****************NAVBAR****************/
 .menu {
@@ -339,4 +399,20 @@ body {
 }
 .listenMobile {
   padding-bottom: 11vw;
+}
+.contactsContainerMobile {
+  padding-bottom: 11vw;
+}
+.contactMobile {
+  padding-bottom: 5vw;
+}
+.contactsTitleMobile {
+  font-size: 10vw;
+  padding-bottom: 7vw;
+}
+.contactTitleMobile {
+  font-size: 6vw;
+}
+.contactTextMobile {
+  font-size: 4vw;
 }
