@@ -16,11 +16,11 @@ export default class Media extends React.Component {
         />
         <div className="pushLeft">
           <Section1 />
+          <Footer
+            isDesktop={this.props.isDesktop}
+            isMobile={this.props.isMobile}
+          />
         </div>
-        <Footer
-          isDesktop={this.props.isDesktop}
-          isMobile={this.props.isMobile}
-        />
       </div>
     );
   }
