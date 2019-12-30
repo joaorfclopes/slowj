@@ -131,7 +131,6 @@ body {
 }
 .entrarButtonContainer {
   position: relative;
-  top: 75vh;
   width: 100%;
 }
 .entrarButton {
@@ -242,6 +241,9 @@ body {
 .basicButtonDesktop:hover .basicButtonTextDesktop {
   color: #0a0a0a;
   transition: 0.4s;
+}
+.entrarButtonContainerDesktop {
+  top: 75vh;
 }
 /****************NAVBAR****************/
 .navLinksDesktop {
@@ -369,6 +371,10 @@ body {
   transition: 0.4s;
 }
 /*-------------------------------------------------------------------------MOBILE-------------------------------------------------------------------------*/
+/*BUTTONS*/
+.entrarButtonContainerMobile {
+  top: 65vh;
+}
 /****************NAVBAR****************/
 .menu {
   float: right;
