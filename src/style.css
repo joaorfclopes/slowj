@@ -139,6 +139,17 @@ body {
   margin: auto;
 }
 /*SECTION 2, 3 and 4*/
+.homeSection2 {
+  height: 100vh;
+  position: relative;
+}
+.homeSection2Content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 .title {
   width: 100%;
   text-align: center;
