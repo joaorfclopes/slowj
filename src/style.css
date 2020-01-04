@@ -138,16 +138,10 @@ body {
   margin: auto;
 }
 /*SECTION 2, 3 and 4*/
-.homeSection2 {
-  height: 100vh;
-  position: relative;
-}
-.homeSection2Content {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.homeSection4 {
+  background: #212422;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
 }
 .title {
   width: 100%;
@@ -165,10 +159,14 @@ body {
   display: inline-block;
 }
 .homeSection2 {
-  background: #121212;
+  background: #020202;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
 }
 .homeSection3 {
   background: #f8f8f8;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
 }
 .contactsContainer {
   color: black;
@@ -187,9 +185,6 @@ body {
 .contactText {
   color: #585858;
   font-size: 15px;
-}
-.homeSection4 {
-  background: #c4c4c4;
 }
 /****************BIO****************/
 /*SECTION 1*/
@@ -299,7 +294,7 @@ body {
   padding-bottom: 90px;
 }
 .listenDesktop {
-  padding-bottom: 90px;
+  padding-bottom: 150px;
 }
 .contactsContainerDesktop {
   padding-bottom: 90px;
@@ -452,7 +447,7 @@ body {
   padding-bottom: 11vw;
 }
 .listenMobile {
-  padding-bottom: 11vw;
+  padding-bottom: 20vw;
 }
 .contactsContainerMobile {
   padding-bottom: 11vw;

@@ -9,7 +9,7 @@ export default class Section2 extends React.Component {
   render() {
     return (
       <div className="homeSection2">
-        <div className="homeSection2Content">
+        <div className="homeSectionContent">
           <Title
             isDesktop={this.props.isDesktop}
             isMobile={this.props.isMobile}

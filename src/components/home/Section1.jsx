@@ -6,7 +6,7 @@ export default class Section1 extends React.Component {
   scrollToSection2() {
     $("html, body").animate(
       {
-        scrollTop: $(".homeSection2").offset().top - 10
+        scrollTop: $(".homeSection4").offset().top
       },
       500,
       "linear"
