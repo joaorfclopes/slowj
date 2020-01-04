@@ -294,10 +294,11 @@ body {
   padding-bottom: 90px;
 }
 .listenDesktop {
-  padding-bottom: 150px;
+  padding-bottom: 90px;
 }
 .contactsContainerDesktop {
-  padding-bottom: 90px;
+  padding-top: 90px;
+  padding-bottom: 80px;
 }
 .contactsTitleDesktop {
   padding-bottom: 50px;
@@ -447,10 +448,11 @@ body {
   padding-bottom: 11vw;
 }
 .listenMobile {
-  padding-bottom: 20vw;
+  padding-bottom: 11vw;
 }
 .contactsContainerMobile {
-  padding-bottom: 11vw;
+  padding-top: 11vw;
+  padding-bottom: 6vw;
 }
 .contactMobile {
   padding-bottom: 5vw;
