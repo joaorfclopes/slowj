@@ -22,9 +22,9 @@ export default class Section4 extends React.Component {
         <ListenButtonsSection
           isDesktop={this.props.isDesktop}
           isMobile={this.props.isMobile}
-          redirectSpotify="https://open.spotify.com/album/7nmtqSWbVJBxRbpAZT8I6r"
-          redirectAppleMusic="https://music.apple.com/pt/album/the-art-of-slowing-down/1215336873?app=music&ign-mpt=uo%3D4"
-          redirectGooglePlay="https://play.google.com/store/music/album/Slow_J_The_Art_of_Slowing_Down?id=Bs3pnuccst6hzqwg2ccpenivbl4&hl=en"
+          redirectSpotify="https://open.spotify.com/album/4aYjRWiuEU8gGeIs3FeAWJ"
+          redirectAppleMusic="https://music.apple.com/pt/album/you-are-forgiven/1480261274"
+          redirectGooglePlay="https://play.google.com/store/music/album/Slow_J_You_Are_Forgiven?id=Boxw66flbjz3rs43jnsssq45drq"
         />
       </div>
     );
