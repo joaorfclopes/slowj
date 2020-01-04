@@ -139,7 +139,7 @@ body {
 }
 /*SECTION 2, 3 and 4*/
 .homeSection4 {
-  background: #212422;
+  background: #22262b; /*22262B*/
   padding-top: 8vh;
   padding-bottom: 8vh;
 }
@@ -189,8 +189,16 @@ body {
 /****************BIO****************/
 /*SECTION 1*/
 .bioSection1 {
-  height: 100vh;
-  background: #121212;
+  background: #020202;
+}
+.bioText {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: white;
 }
 /****************MEDIA****************/
 /*SECTION 1*/
@@ -339,6 +347,17 @@ body {
     margin-right: 1vw;
   }
 }
+/****************BIO****************/
+.bioTextDesktop {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 35%;
+  margin-left: 45%;
+}
+.separatorDesktop {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 /****************FOOTER****************/
 .footerDesktop {
   height: 300px;
@@ -459,6 +478,13 @@ body {
 }
 .contactsTitleMobile {
   padding-bottom: 7vw;
+}
+/****************BIO****************/
+.bioTextMobile {
+  padding-top: 15vw;
+  padding-bottom: 15vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 /****************FOOTER****************/
 .footerMobile {
