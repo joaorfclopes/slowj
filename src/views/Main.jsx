@@ -2,9 +2,9 @@ import React from "react";
 import Home from "./Home";
 import Bio from "./Bio";
 import Media from "./Media";
+import ScrollTop from "../components/buttons/ScrollTop";
 import $ from "jquery";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
 
 $(window).scroll(function() {
   if ($(window).scrollTop() >= 100) {
@@ -13,6 +13,23 @@ $(window).scroll(function() {
   } else {
     $(".navbar").css("height", "55px");
     $(".navbarContainer").css("height", "55px");
+  }
+  if ($(window).scrollTop() >= 200) {
+    $(".scrollUp").addClass("show");
+    $(".scrollUp").removeClass("hide");
+  } else {
+    $(".scrollUp").removeClass("show");
+    $(".scrollUp").addClass("hide");
+  }
+});
+
+$(window).ready(function() {
+  if ($(window).scrollTop() >= 200) {
+    $(".scrollUp").addClass("show");
+    $(".scrollUp").removeClass("hide");
+  } else {
+    $(".scrollUp").removeClass("show");
+    $(".scrollUp").addClass("hide");
   }
 });
 
@@ -62,10 +79,7 @@ export default class Main extends React.Component {
               </Route>
             </Switch>
           </Router>
-          <ScrollUpButton
-            EasingType="linear"
-            ShowAtPosition={200}
-          ></ScrollUpButton>
+          <ScrollTop />
         </div>
       );
     }

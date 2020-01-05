@@ -57,16 +57,9 @@ body {
   width: 12vh;
 }
 /*BUTTONS*/
-.ScrollUpButton__Container {
-  outline: none;
-  border-radius: 50%;
-  z-index: 999 !important;
-  background: white !important;
-  text-align: center;
-  border: 2px solid red;
-  opacity: 0.3 !important;
-  width: 45px !important;
-  height: 45px !important;
+.arrowUp {
+  width: 20px;
+  padding-top: 12px;
 }
 .basicButton {
   width: 120px;
@@ -223,15 +216,56 @@ body {
 }
 /*-------------------------------------------------------------------------DESKTOP-------------------------------------------------------------------------*/
 /*BUTTONS*/
-.ScrollUpButton__Container > svg {
-  width: 30px !important;
-  margin-top: 5px;
+.scrollUp {
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 46px;
+  height: 46px;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.4s;
+  opacity: 0.3;
+  visibility: hidden;
 }
-.ScrollUpButton__Toggled {
-  bottom: 30px !important;
+.scrollUp:hover {
+  transition: 0.4s;
+  opacity: 1;
 }
-.ScrollUpButton__Toggled:hover {
-  opacity: 1 !important;
+.show {
+  visibility: visible;
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.hide {
+  visibility: hidden;
+  animation-name: fadeOutDown;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInUp {
+  from {
+    visibility: hidden;
+    transform: translate3d(0, 200%, 0);
+  }
+
+  to {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeOutDown {
+  from {
+    visibility: visible;
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, 200%, 0);
+  }
 }
 .basicButtonDesktop {
   transition: 0.4s;
