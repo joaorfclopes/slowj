@@ -40,6 +40,8 @@ body {
   text-align: center;
   position: relative;
   top: 40%;
+}
+.loaderIconImg {
   animation-name: spin;
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
