@@ -209,9 +209,6 @@ body {
   background-color: black;
   margin: 0 auto;
 }
-.mediaItemsContainer {
-  padding-top: 35px;
-}
 .mediaItem {
   width: 20vw;
   height: 20vw;
@@ -479,6 +476,9 @@ body {
   width: 100px;
   height: 3px;
 }
+.mediaItemsContainerDesktop {
+  padding-top: 35px;
+}
 .mediaItemDesktop:hover .mediaItemImageDesktop {
   transition: 0.4s;
   opacity: 0.2;
@@ -626,6 +626,9 @@ body {
 .mediaSeparatorMobile {
   width: 25vw;
   height: 2px;
+}
+.mediaItemsContainerMobile {
+  padding-top: 8vw;
 }
 .mediaItemImageMobile {
   opacity: 0.5;
