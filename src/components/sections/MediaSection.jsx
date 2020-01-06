@@ -84,7 +84,72 @@ export default class MediaSection extends React.Component {
       );
     }
     if (this.props.isDesktop === false && this.props.isMobile === true) {
-      return <div></div>;
+      return (
+        <div className="mediaContainer mediaContainerDesktop">
+          <div className="mediaTitle mediaTitleDesktop">Media</div>
+          <div className="mediaSeparator mediaSeparatorDesktop"></div>
+          <div
+            className="mediaItemsContainer mediaItemsContainerDesktop"
+            data-isotope='{ "itemSelector": ".mediaItem", "layoutMode": "fitRows" }'
+          >
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              image={image1}
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              image={image2}
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              image={image3}
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              image={image4}
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              image={image5}
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              image={image6}
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              image={image7}
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              image={image8}
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              image={image9}
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              image={image10}
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              image={image11}
+            />
+          </div>
+        </div>
+      );
     }
   }
 }

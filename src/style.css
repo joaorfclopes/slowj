@@ -224,6 +224,7 @@ body {
   background-color: black;
   background-size: cover;
   background-position-x: center;
+  cursor: pointer;
 }
 @media only screen and (max-width: 1400px) {
   .mediaItem {
