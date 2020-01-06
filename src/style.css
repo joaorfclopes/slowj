@@ -217,6 +217,7 @@ body {
   height: 20vw;
   background-color: black;
   cursor: pointer;
+  overflow: hidden;
 }
 .mediaItemImage {
   width: 20vw;
@@ -224,6 +225,15 @@ body {
   background-size: cover;
   background-position-x: center;
   transition: 0.4s;
+}
+.mediaItemDescription {
+  text-align: left;
+  position: absolute;
+  z-index: 100;
+  left: 30px;
+  bottom: 30px;
+  font-weight: 900;
+  font-size: 40px;
 }
 @media only screen and (max-width: 1400px) {
   .mediaItem {
@@ -264,10 +274,6 @@ body {
     width: 100vw;
     height: 100vw;
   }
-}
-.mediaItem:hover .mediaItemImage {
-  transition: 0.4s;
-  opacity: 0.2;
 }
 /****************FOOTER****************/
 .footer {
@@ -473,6 +479,11 @@ body {
   width: 100px;
   height: 3px;
 }
+.mediaItemDesktop:hover .mediaItemImageDesktop {
+  transition: 0.4s;
+  opacity: 0.2;
+  transform: scale(1.1);
+}
 /****************FOOTER****************/
 .footerDesktop {
   height: 300px;
@@ -615,6 +626,9 @@ body {
 .mediaSeparatorMobile {
   width: 25vw;
   height: 2px;
+}
+.mediaItemImageMobile {
+  opacity: 0.5;
 }
 /****************FOOTER****************/
 .footerMobile {

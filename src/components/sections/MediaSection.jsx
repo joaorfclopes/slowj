@@ -28,56 +28,67 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image1}
+              description="Vida Boa"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image2}
+              description="Tinta da Raiz"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image3}
+              description="The Free Food Tape - Listening Party"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image4}
+              description="Rap Notícias"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image5}
+              description="O Cliente @Sofar Lisbon"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image6}
+              description="M de Musica"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image7}
+              description="Crítica H2T"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image8}
+              description="Crítica R&B"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image9}
+              description="Cristalina"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image10}
+              description="Comida"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image11}
+              description="BP vs Slow J [RVCA | Surge Skate]"
             />
           </div>
         </div>
@@ -96,56 +107,67 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image1}
+              description="Vida Boa"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image2}
+              description="Tinta da Raiz"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image3}
+              description="The Free Food Tape - Listening Party"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image4}
+              description="Rap Notícias"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image5}
+              description="O Cliente @Sofar Lisbon"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image6}
+              description="M de Musica"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image7}
+              description="Crítica H2T"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image8}
+              description="Crítica R&B"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image9}
+              description="Cristalina"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image10}
+              description="Comida"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               image={image11}
+              description="BP vs Slow J [RVCA | Surge Skate]"
             />
           </div>
         </div>
