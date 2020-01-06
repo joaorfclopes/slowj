@@ -203,20 +203,14 @@ body {
 .mediaTitle {
   color: black;
   font-weight: 900;
-  font-size: 70px;
   text-align: center;
-  padding-top: 70px;
-  padding-bottom: 30px;
 }
 .mediaSeparator {
   background-color: black;
-  width: 100px;
-  height: 3px;
   margin: 0 auto;
 }
 .mediaItemsContainer {
   padding-top: 35px;
-  padding-bottom: 100px;
 }
 .mediaItem {
   width: 20vw;
@@ -443,6 +437,17 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+/****************MEDIA****************/
+/*SECTION 1*/
+.mediaTitleDesktop {
+  font-size: 70px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.mediaSeparatorDesktop {
+  width: 100px;
+  height: 3px;
+}
 /****************FOOTER****************/
 .footerDesktop {
   height: 300px;
@@ -574,6 +579,17 @@ body {
 .separatorMobile {
   margin-top: 10vw;
   margin-bottom: 10vw;
+}
+/****************MEDIA****************/
+/*SECTION 1*/
+.mediaTitleMobile {
+  font-size: 15vw;
+  padding-top: 10vw;
+  padding-bottom: 5vw;
+}
+.mediaSeparatorMobile {
+  width: 25vw;
+  height: 2px;
 }
 /****************FOOTER****************/
 .footerMobile {

@@ -85,11 +85,11 @@ export default class MediaSection extends React.Component {
     }
     if (this.props.isDesktop === false && this.props.isMobile === true) {
       return (
-        <div className="mediaContainer mediaContainerDesktop">
-          <div className="mediaTitle mediaTitleDesktop">Media</div>
-          <div className="mediaSeparator mediaSeparatorDesktop"></div>
+        <div className="mediaContainer mediaContainerMobile">
+          <div className="mediaTitle mediaTitleMobile">Media</div>
+          <div className="mediaSeparator mediaSeparatorMobile"></div>
           <div
-            className="mediaItemsContainer mediaItemsContainerDesktop"
+            className="mediaItemsContainer mediaItemsContainerMobile"
             data-isotope='{ "itemSelector": ".mediaItem", "layoutMode": "fitRows" }'
           >
             <MediaItem
