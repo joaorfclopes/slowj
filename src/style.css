@@ -522,6 +522,10 @@ body {
   padding-left: 10vw;
   padding-right: 10vw;
 }
+.separatorMobile {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
 /****************FOOTER****************/
 .footerMobile {
   height: 60vw;
