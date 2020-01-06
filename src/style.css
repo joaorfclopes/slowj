@@ -216,12 +216,21 @@ body {
   width: 20vw;
   height: 20vw;
   background-color: black;
+  cursor: pointer;
+}
+.mediaItemImage {
+  width: 20vw;
+  height: 20vw;
   background-size: cover;
   background-position-x: center;
-  cursor: pointer;
+  transition: 0.4s;
 }
 @media only screen and (max-width: 1400px) {
   .mediaItem {
+    width: 25vw;
+    height: 25vw;
+  }
+  .mediaItemImage {
     width: 25vw;
     height: 25vw;
   }
@@ -231,9 +240,17 @@ body {
     width: 33.33vw;
     height: 33.33vw;
   }
+  .mediaItemImage {
+    width: 33.33vw;
+    height: 33.33vw;
+  }
 }
 @media only screen and (max-width: 800px) {
   .mediaItem {
+    width: 50vw;
+    height: 50vw;
+  }
+  .mediaItemImage {
     width: 50vw;
     height: 50vw;
   }
@@ -243,6 +260,14 @@ body {
     width: 100vw;
     height: 100vw;
   }
+  .mediaItemImage {
+    width: 100vw;
+    height: 100vw;
+  }
+}
+.mediaItem:hover .mediaItemImage {
+  transition: 0.4s;
+  opacity: 0.2;
 }
 /****************FOOTER****************/
 .footer {
