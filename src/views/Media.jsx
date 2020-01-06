@@ -15,7 +15,10 @@ export default class Media extends React.Component {
           media={true}
         />
         <div className="pushLeft">
-          <Section1 />
+          <Section1
+            isDesktop={this.props.isDesktop}
+            isMobile={this.props.isMobile}
+          />
           <Footer
             isDesktop={this.props.isDesktop}
             isMobile={this.props.isMobile}
