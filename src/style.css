@@ -486,7 +486,7 @@ body {
 .mediaItemDesktop:hover .mediaItemImageDesktop {
   transition: 0.4s;
   opacity: 0.2;
-  transform: scale(1.1);
+  padding-left: 50px;
 }
 /****************FOOTER****************/
 .footerDesktop {
