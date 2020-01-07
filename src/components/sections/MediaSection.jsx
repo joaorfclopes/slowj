@@ -1,16 +1,27 @@
 import React from "react";
 import "isotope-layout";
 import MediaItem from "./MediaItem";
+import lagrimas from "../../assets/images/lagrimas.jpg";
+import yafpublico from "../../assets/images/yafpublico.jpg";
+import yafcca from "../../assets/images/yafcca.jpg";
+import tambemsonhar from "../../assets/images/tambemsonhar.jpg";
+import yafreb from "../../assets/images/yafreb.jpg";
+import rimasebatidas from "../../assets/images/rimasebatidas.jpg";
+import nuncapares from "../../assets/images/nuncapares.jpg";
+import megahits from "../../assets/images/megahits.jpg";
+import taosdreb from "../../assets/images/taosdreb.jpg";
+import publico from "../../assets/images/publico.jpg";
+import arte from "../../assets/images/arte.jpg";
+import antena3 from "../../assets/images/antena3.jpg";
+import mdemusica from "../../assets/images/mdemusica.jpg";
 import vidaboa from "../../assets/images/vidaboa.jpg";
+import sofarlisbon from "../../assets/images/sofarlisbon.jpg";
+import comida from "../../assets/images/comida.jpg";
+import cristalina from "../../assets/images/cristalina.jpg";
+import bpslowj from "../../assets/images/bpslowj.jpg";
 import tintadaraiz from "../../assets/images/tintadaraiz.jpg";
 import listeningparty from "../../assets/images/listeningparty.jpg";
-import rapnoticias from "../../assets/images/rapnoticias.jpg";
-import sofarlisbon from "../../assets/images/sofarlisbon.jpg";
-import mdemusica from "../../assets/images/mdemusica.jpg";
-import rimasebatidas from "../../assets/images/rimasebatidas.jpg";
-import cristalina from "../../assets/images/cristalina.jpg";
-import comida from "../../assets/images/comida.jpg";
-import bpslowj from "../../assets/images/bpslowj.jpg";
+import tfftreb from "../../assets/images/tfftreb.jpg";
 
 export default class MediaSection extends React.Component {
   render() {
@@ -26,9 +37,128 @@ export default class MediaSection extends React.Component {
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=7BYFJL81Dz4"
+              image={lagrimas}
+              description="Lágrimas (Part 2)"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.publico.pt/2019/12/13/culturaipsilon/entrevista/-slow-j-you-are-forgiven-significa-ja-nasceste-perdao-ideia-liberdade-1896669"
+              image={yafpublico}
+              description="Público - You Are Forgiven"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.comunidadeculturaearte.com/you-are-forgiven-slow-j-no-seu-estado-mais-puro/"
+              image={yafcca}
+              description="CCA - You Are Forgiven"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=56-ye8jX4h0"
+              image={tambemsonhar}
+              description="Também Sonhar (Part 1)"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.rimasebatidas.pt/slow-j-you-are-forgiven/"
+              image={yafreb}
+              description="R&B - You Are Forgiven"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.rimasebatidas.pt/slow-j-preciso-desconstruir/"
+              image={rimasebatidas}
+              description="Rimas e Batidas"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=tHJNEAsLCCo"
+              image={nuncapares}
+              description="Nunca Pares"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=sXlD6Wcpy6c"
+              image={megahits}
+              description="Mega Hits"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.rimasebatidas.pt/slow-j-the-art-of-slowing-down/"
+              image={taosdreb}
+              description="R&B - The Art Of Slowing Down"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.publico.pt/2017/03/24/culturaipsilon/noticia/slow-j-1765940"
+              image={publico}
+              description="Público"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=rzPGBIPWuHE"
+              image={arte}
+              description="Arte (Meet Speedy)"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=o7u8aX8dUPE"
+              image={antena3}
+              description="Antena 3"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="http://mdemusica.pt/2016/11/09/slow-j-album-vai-algo-especial/"
+              image={mdemusica}
+              description="M de Musica"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=1rETsKuw2Hk"
               image={vidaboa}
               description="Vida Boa"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=flILuwfNWbM"
+              image={sofarlisbon}
+              description="O Cliente @Sofar Lisbon"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=5R8SIoaIwE0"
+              image={comida}
+              description="Comida"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=Y5PINCsl9RQ"
+              image={cristalina}
+              description="Cristalina"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=SQJfxC6n6KY"
+              image={bpslowj}
+              description="BP vs Slow J [RVCA | Surge Skate]"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -47,51 +177,9 @@ export default class MediaSection extends React.Component {
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              link="http://www.rapnoticias.pt/index.php/rapnacional/265-ep-slow-j-the-free-food-tape"
-              image={rapnoticias}
-              description="Rap Notícias"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="https://www.youtube.com/watch?v=flILuwfNWbM"
-              image={sofarlisbon}
-              description="O Cliente @Sofar Lisbon"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="http://mdemusica.pt/2016/11/09/slow-j-album-vai-algo-especial/"
-              image={mdemusica}
-              description="M de Musica"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
               link="https://www.rimasebatidas.pt/slow-j-the-free-food-tape-ep/"
-              image={rimasebatidas}
-              description="Crítica R&B"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="https://www.youtube.com/watch?v=Y5PINCsl9RQ"
-              image={cristalina}
-              description="Cristalina"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="https://www.youtube.com/watch?v=5R8SIoaIwE0"
-              image={comida}
-              description="Comida"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="https://www.youtube.com/watch?v=SQJfxC6n6KY"
-              image={bpslowj}
-              description="BP vs Slow J [RVCA | Surge Skate]"
+              image={tfftreb}
+              description="R&B - The Free Food Tape"
             />
           </div>
         </div>
@@ -105,78 +193,7 @@ export default class MediaSection extends React.Component {
           <div
             className="mediaItemsContainer mediaItemsContainerMobile"
             data-isotope='{ "itemSelector": ".mediaItem", "layoutMode": "fitRows" }'
-          >
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="https://www.youtube.com/watch?v=1rETsKuw2Hk"
-              image={vidaboa}
-              description="Vida Boa"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="https://www.youtube.com/watch?v=_SphtRjwOSk"
-              image={tintadaraiz}
-              description="Tinta da Raiz"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="https://www.youtube.com/watch?v=bAFJhH9l8IQ"
-              image={listeningparty}
-              description="The Free Food Tape - Listening Party"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="http://www.rapnoticias.pt/index.php/rapnacional/265-ep-slow-j-the-free-food-tape"
-              image={rapnoticias}
-              description="Rap Notícias"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="https://www.youtube.com/watch?v=flILuwfNWbM"
-              image={sofarlisbon}
-              description="O Cliente @Sofar Lisbon"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="http://mdemusica.pt/2016/11/09/slow-j-album-vai-algo-especial/"
-              image={mdemusica}
-              description="M de Musica"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="https://www.rimasebatidas.pt/slow-j-the-free-food-tape-ep/"
-              image={rimasebatidas}
-              description="Crítica R&B"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="https://www.youtube.com/watch?v=Y5PINCsl9RQ"
-              image={cristalina}
-              description="Cristalina"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="https://www.youtube.com/watch?v=5R8SIoaIwE0"
-              image={comida}
-              description="Comida"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="https://www.youtube.com/watch?v=SQJfxC6n6KY"
-              image={bpslowj}
-              description="BP vs Slow J [RVCA | Surge Skate]"
-            />
-          </div>
+          ></div>
         </div>
       );
     }

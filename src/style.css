@@ -232,6 +232,7 @@ body {
   z-index: 100;
   left: 30px;
   bottom: 30px;
+  right: 15px;
   font-weight: 900;
   font-size: 40px;
 }
