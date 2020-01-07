@@ -193,7 +193,155 @@ export default class MediaSection extends React.Component {
           <div
             className="mediaItemsContainer mediaItemsContainerMobile"
             data-isotope='{ "itemSelector": ".mediaItem", "layoutMode": "fitRows" }'
-          ></div>
+          >
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=7BYFJL81Dz4"
+              image={lagrimas}
+              description="Lágrimas (Part 2)"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.publico.pt/2019/12/13/culturaipsilon/entrevista/-slow-j-you-are-forgiven-significa-ja-nasceste-perdao-ideia-liberdade-1896669"
+              image={yafpublico}
+              description="Público - You Are Forgiven"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.comunidadeculturaearte.com/you-are-forgiven-slow-j-no-seu-estado-mais-puro/"
+              image={yafcca}
+              description="CCA - You Are Forgiven"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=56-ye8jX4h0"
+              image={tambemsonhar}
+              description="Também Sonhar (Part 1)"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.rimasebatidas.pt/slow-j-you-are-forgiven/"
+              image={yafreb}
+              description="R&B - You Are Forgiven"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.rimasebatidas.pt/slow-j-preciso-desconstruir/"
+              image={rimasebatidas}
+              description="Rimas e Batidas"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=tHJNEAsLCCo"
+              image={nuncapares}
+              description="Nunca Pares"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=sXlD6Wcpy6c"
+              image={megahits}
+              description="Mega Hits"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.rimasebatidas.pt/slow-j-the-art-of-slowing-down/"
+              image={taosdreb}
+              description="R&B - The Art Of Slowing Down"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.publico.pt/2017/03/24/culturaipsilon/noticia/slow-j-1765940"
+              image={publico}
+              description="Público"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=rzPGBIPWuHE"
+              image={arte}
+              description="Arte (Meet Speedy)"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=o7u8aX8dUPE"
+              image={antena3}
+              description="Antena 3"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="http://mdemusica.pt/2016/11/09/slow-j-album-vai-algo-especial/"
+              image={mdemusica}
+              description="M de Musica"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=1rETsKuw2Hk"
+              image={vidaboa}
+              description="Vida Boa"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=flILuwfNWbM"
+              image={sofarlisbon}
+              description="O Cliente @Sofar Lisbon"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=5R8SIoaIwE0"
+              image={comida}
+              description="Comida"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=Y5PINCsl9RQ"
+              image={cristalina}
+              description="Cristalina"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=SQJfxC6n6KY"
+              image={bpslowj}
+              description="BP vs Slow J [RVCA | Surge Skate]"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=_SphtRjwOSk"
+              image={tintadaraiz}
+              description="Tinta da Raiz"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.youtube.com/watch?v=bAFJhH9l8IQ"
+              image={listeningparty}
+              description="The Free Food Tape - Listening Party"
+            />
+            <MediaItem
+              isDesktop={this.props.isDesktop}
+              isMobile={this.props.isMobile}
+              link="https://www.rimasebatidas.pt/slow-j-the-free-food-tape-ep/"
+              image={tfftreb}
+              description="R&B - The Free Food Tape"
+            />
+          </div>
         </div>
       );
     }
