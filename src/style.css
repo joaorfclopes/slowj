@@ -209,6 +209,9 @@ body {
   background-color: black;
   margin: 0 auto;
 }
+.mediaItemLink {
+  color: inherit;
+}
 .mediaItem {
   width: 20vw;
   height: 20vw;

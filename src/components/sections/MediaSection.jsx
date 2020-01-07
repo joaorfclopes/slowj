@@ -1,17 +1,16 @@
 import React from "react";
 import "isotope-layout";
 import MediaItem from "./MediaItem";
-import image1 from "../../assets/images/vidaboa.jpg";
-import image2 from "../../assets/images/tintadaraiz.jpg";
-import image3 from "../../assets/images/listeningparty.jpg";
-import image4 from "../../assets/images/rapnoticias.jpg";
-import image5 from "../../assets/images/sofarlisbon.jpg";
-import image6 from "../../assets/images/mdemusica.jpg";
-import image7 from "../../assets/images/rimasebatidas.jpg";
-import image8 from "../../assets/images/h2t.jpg";
-import image9 from "../../assets/images/cristalina.jpg";
-import image10 from "../../assets/images/comida.jpg";
-import image11 from "../../assets/images/bpslowj.jpg";
+import vidaboa from "../../assets/images/vidaboa.jpg";
+import tintadaraiz from "../../assets/images/tintadaraiz.jpg";
+import listeningparty from "../../assets/images/listeningparty.jpg";
+import rapnoticias from "../../assets/images/rapnoticias.jpg";
+import sofarlisbon from "../../assets/images/sofarlisbon.jpg";
+import mdemusica from "../../assets/images/mdemusica.jpg";
+import rimasebatidas from "../../assets/images/rimasebatidas.jpg";
+import cristalina from "../../assets/images/cristalina.jpg";
+import comida from "../../assets/images/comida.jpg";
+import bpslowj from "../../assets/images/bpslowj.jpg";
 
 export default class MediaSection extends React.Component {
   render() {
@@ -27,67 +26,71 @@ export default class MediaSection extends React.Component {
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image1}
+              link="https://www.youtube.com/watch?v=1rETsKuw2Hk"
+              image={vidaboa}
               description="Vida Boa"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image2}
+              link="https://www.youtube.com/watch?v=_SphtRjwOSk"
+              image={tintadaraiz}
               description="Tinta da Raiz"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image3}
+              link="https://www.youtube.com/watch?v=bAFJhH9l8IQ"
+              image={listeningparty}
               description="The Free Food Tape - Listening Party"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image4}
+              link="http://www.rapnoticias.pt/index.php/rapnacional/265-ep-slow-j-the-free-food-tape"
+              image={rapnoticias}
               description="Rap Notícias"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image5}
+              link="https://www.youtube.com/watch?v=flILuwfNWbM"
+              image={sofarlisbon}
               description="O Cliente @Sofar Lisbon"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image6}
+              link="http://mdemusica.pt/2016/11/09/slow-j-album-vai-algo-especial/"
+              image={mdemusica}
               description="M de Musica"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image7}
-              description="Crítica H2T"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              image={image8}
+              link="https://www.rimasebatidas.pt/slow-j-the-free-food-tape-ep/"
+              image={rimasebatidas}
               description="Crítica R&B"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image9}
+              link="https://www.youtube.com/watch?v=Y5PINCsl9RQ"
+              image={cristalina}
               description="Cristalina"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image10}
+              link="https://www.youtube.com/watch?v=5R8SIoaIwE0"
+              image={comida}
               description="Comida"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image11}
+              link="https://www.youtube.com/watch?v=SQJfxC6n6KY"
+              image={bpslowj}
               description="BP vs Slow J [RVCA | Surge Skate]"
             />
           </div>
@@ -106,67 +109,71 @@ export default class MediaSection extends React.Component {
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image1}
+              link="https://www.youtube.com/watch?v=1rETsKuw2Hk"
+              image={vidaboa}
               description="Vida Boa"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image2}
+              link="https://www.youtube.com/watch?v=_SphtRjwOSk"
+              image={tintadaraiz}
               description="Tinta da Raiz"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image3}
+              link="https://www.youtube.com/watch?v=bAFJhH9l8IQ"
+              image={listeningparty}
               description="The Free Food Tape - Listening Party"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image4}
+              link="http://www.rapnoticias.pt/index.php/rapnacional/265-ep-slow-j-the-free-food-tape"
+              image={rapnoticias}
               description="Rap Notícias"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image5}
+              link="https://www.youtube.com/watch?v=flILuwfNWbM"
+              image={sofarlisbon}
               description="O Cliente @Sofar Lisbon"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image6}
+              link="http://mdemusica.pt/2016/11/09/slow-j-album-vai-algo-especial/"
+              image={mdemusica}
               description="M de Musica"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image7}
-              description="Crítica H2T"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              image={image8}
+              link="https://www.rimasebatidas.pt/slow-j-the-free-food-tape-ep/"
+              image={rimasebatidas}
               description="Crítica R&B"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image9}
+              link="https://www.youtube.com/watch?v=Y5PINCsl9RQ"
+              image={cristalina}
               description="Cristalina"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image10}
+              link="https://www.youtube.com/watch?v=5R8SIoaIwE0"
+              image={comida}
               description="Comida"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
-              image={image11}
+              link="https://www.youtube.com/watch?v=SQJfxC6n6KY"
+              image={bpslowj}
               description="BP vs Slow J [RVCA | Surge Skate]"
             />
           </div>
