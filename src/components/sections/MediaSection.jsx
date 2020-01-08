@@ -22,12 +22,9 @@ import tintadaraiz from "../../assets/images/tintadaraiz.jpg";
 import listeningparty from "../../assets/images/listeningparty.jpg";
 import tfftreb from "../../assets/images/tfftreb.jpg";
 import Isotope from "isotope-layout";
+import $ from "jquery";
 
 export default class MediaSection extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isotope: null };
-  }
   componentDidMount() {
     const iso = new Isotope(".mediaItemsContainer", {
       itemSelector: ".mediaItem",
@@ -37,20 +34,35 @@ export default class MediaSection extends React.Component {
     const filtersElem = document.querySelector(".mediaFilterButtons");
     filtersElem.addEventListener("click", function(event) {
       let filterValue = event.target.getAttribute("data-filter");
+      if (filterValue === null) {
+        return;
+      }
       iso.arrange({ filter: filterValue });
     });
-
-    var buttonGroups = document.querySelectorAll(".mediaFilterButtons");
-    for (var i = 0, len = buttonGroups.length; i < len; i++) {
-      var buttonGroup = buttonGroups[i];
-      radioButtonGroup(buttonGroup);
-    }
-    function radioButtonGroup(buttonGroup) {
-      buttonGroup.addEventListener("click", function(event) {
-        buttonGroup.querySelector(".active").classList.remove("active");
-        event.target.classList.add("active");
-      });
-    }
+  }
+  showAll() {
+    $(".showAll").addClass("is-checked");
+    $(".videos").removeClass("is-checked");
+    $(".entrevistas").removeClass("is-checked");
+    $(".criticas").removeClass("is-checked");
+  }
+  showVideos() {
+    $(".showAll").removeClass("is-checked");
+    $(".videos").addClass("is-checked");
+    $(".entrevistas").removeClass("is-checked");
+    $(".criticas").removeClass("is-checked");
+  }
+  showEntrevistas() {
+    $(".showAll").removeClass("is-checked");
+    $(".videos").removeClass("is-checked");
+    $(".entrevistas").addClass("is-checked");
+    $(".criticas").removeClass("is-checked");
+  }
+  showCriticas() {
+    $(".showAll").removeClass("is-checked");
+    $(".videos").removeClass("is-checked");
+    $(".entrevistas").removeClass("is-checked");
+    $(".criticas").addClass("is-checked");
   }
   render() {
     if (this.props.isDesktop === true && this.props.isMobile === false) {
@@ -60,26 +72,30 @@ export default class MediaSection extends React.Component {
           <div className="mediaSeparator mediaSeparatorDesktop"></div>
           <div className="mediaFilterButtons mediaFilterButtonsDesktop">
             <div
-              className="filterButton filterButtonDesktop active"
+              className="filterButton filterButtonDesktop showAll is-checked"
               data-filter="*"
+              onClick={this.showAll}
             >
               Show All
             </div>
             <div
-              className="filterButton filterButtonDesktop"
+              className="filterButton filterButtonDesktop videos"
               data-filter=".video"
+              onClick={this.showVideos}
             >
               Video
             </div>
             <div
-              className="filterButton filterButtonDesktop"
+              className="filterButton filterButtonDesktop entrevistas"
               data-filter=".entrevista"
+              onClick={this.showEntrevistas}
             >
               Entrevista
             </div>
             <div
-              className="filterButton filterButtonDesktop"
+              className="filterButton filterButtonDesktop criticas"
               data-filter=".critica"
+              onClick={this.showCriticas}
             >
               Critica
             </div>
@@ -264,26 +280,30 @@ export default class MediaSection extends React.Component {
           <div className="mediaSeparator mediaSeparatorMobile"></div>
           <div className="mediaFilterButtons mediaFilterButtonsMobile">
             <div
-              className="filterButton filterButtonMobile active"
+              className="filterButton filterButtonMobile showAll is-checked"
               data-filter="*"
+              onClick={this.showAll}
             >
               Show All
             </div>
             <div
-              className="filterButton filterButtonMobile"
+              className="filterButton filterButtonMobile videos"
               data-filter=".video"
+              onClick={this.showVideos}
             >
               Video
             </div>
             <div
-              className="filterButton filterButtonMobile"
+              className="filterButton filterButtonMobile entrevistas"
               data-filter=".entrevista"
+              onClick={this.showEntrevistas}
             >
               Entrevista
             </div>
             <div
-              className="filterButton filterButtonMobile"
+              className="filterButton filterButtonMobile criticas"
               data-filter=".critica"
+              onClick={this.showCriticas}
             >
               Critica
             </div>

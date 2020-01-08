@@ -226,7 +226,7 @@ body {
   transition: 0.4s;
   opacity: 1;
 }
-.active {
+.is-checked {
   opacity: 1;
 }
 .mediaItemLink {
