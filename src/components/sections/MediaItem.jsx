@@ -4,7 +4,7 @@ export default class MediaItem extends React.Component {
   render() {
     if (this.props.isDesktop === true && this.props.isMobile === false) {
       return (
-        <div className={`mediaItem mediaItemDesktop ${this.props.class}`}>
+        <div className={`mediaItem mediaItemDesktop ${this.props.sub}`}>
           <a
             className="mediaItemLink"
             href={this.props.link}
@@ -15,7 +15,7 @@ export default class MediaItem extends React.Component {
               {this.props.description}
             </div>
             <div className="mediaItemSub mediaItemSubDesktop">
-              {this.props.class}
+              {this.props.sub}
             </div>
             <div
               className="mediaItemImage mediaItemImageDesktop"
@@ -27,7 +27,7 @@ export default class MediaItem extends React.Component {
     }
     if (this.props.isDesktop === false && this.props.isMobile === true) {
       return (
-        <div className={`mediaItem mediaItemMobile ${this.props.class}`}>
+        <div className={`mediaItem mediaItemMobile ${this.props.sub}`}>
           <a
             className="mediaItemLink"
             href={this.props.link}
@@ -36,6 +36,9 @@ export default class MediaItem extends React.Component {
           >
             <div className="mediaItemDescription mediaItemDescriptionMobile">
               {this.props.description}
+            </div>
+            <div className="mediaItemSub mediaItemSubMobile">
+              {this.props.sub}
             </div>
             <div
               className="mediaItemImage mediaItemImageMobile"

@@ -1,5 +1,4 @@
 import React from "react";
-import "isotope-layout";
 import MediaItem from "./MediaItem";
 import lagrimas from "../../assets/images/lagrimas.jpg";
 import yafpublico from "../../assets/images/yafpublico.jpg";
@@ -22,23 +21,75 @@ import bpslowj from "../../assets/images/bpslowj.jpg";
 import tintadaraiz from "../../assets/images/tintadaraiz.jpg";
 import listeningparty from "../../assets/images/listeningparty.jpg";
 import tfftreb from "../../assets/images/tfftreb.jpg";
+import Isotope from "isotope-layout";
 
 export default class MediaSection extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isotope: null };
+  }
+  componentDidMount() {
+    const iso = new Isotope(".mediaItemsContainer", {
+      itemSelector: ".mediaItem",
+      layoutMode: "fitRows"
+    });
+
+    const filtersElem = document.querySelector(".mediaFilterButtons");
+    filtersElem.addEventListener("click", function(event) {
+      let filterValue = event.target.getAttribute("data-filter");
+      iso.arrange({ filter: filterValue });
+    });
+
+    var buttonGroups = document.querySelectorAll(".mediaFilterButtons");
+    for (var i = 0, len = buttonGroups.length; i < len; i++) {
+      var buttonGroup = buttonGroups[i];
+      radioButtonGroup(buttonGroup);
+    }
+    function radioButtonGroup(buttonGroup) {
+      buttonGroup.addEventListener("click", function(event) {
+        buttonGroup.querySelector(".active").classList.remove("active");
+        event.target.classList.add("active");
+      });
+    }
+  }
   render() {
     if (this.props.isDesktop === true && this.props.isMobile === false) {
       return (
         <div className="mediaContainer mediaContainerDesktop">
           <div className="mediaTitle mediaTitleDesktop">Media</div>
           <div className="mediaSeparator mediaSeparatorDesktop"></div>
-          <div
-            className="mediaItemsContainer mediaItemsContainerDesktop"
-            data-isotope='{ "itemSelector": ".mediaItem", "layoutMode": "fitRows" }'
-          >
+          <div className="mediaFilterButtons mediaFilterButtonsDesktop">
+            <div
+              className="filterButton filterButtonDesktop active"
+              data-filter="*"
+            >
+              Show All
+            </div>
+            <div
+              className="filterButton filterButtonDesktop"
+              data-filter=".video"
+            >
+              Video
+            </div>
+            <div
+              className="filterButton filterButtonDesktop"
+              data-filter=".entrevista"
+            >
+              Entrevista
+            </div>
+            <div
+              className="filterButton filterButtonDesktop"
+              data-filter=".critica"
+            >
+              Critica
+            </div>
+          </div>
+          <div className="mediaItemsContainer mediaItemsContainerDesktop">
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=7BYFJL81Dz4"
-              class="video"
+              sub="video"
               image={lagrimas}
               description="Lágrimas (Part 2)"
             />
@@ -46,7 +97,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.publico.pt/2019/12/13/culturaipsilon/entrevista/-slow-j-you-are-forgiven-significa-ja-nasceste-perdao-ideia-liberdade-1896669"
-              class="entrevista"
+              sub="critica"
               image={yafpublico}
               description="Público - You Are Forgiven"
             />
@@ -54,7 +105,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.comunidadeculturaearte.com/you-are-forgiven-slow-j-no-seu-estado-mais-puro/"
-              class="entrevista"
+              sub="critica"
               image={yafcca}
               description="CCA - You Are Forgiven"
             />
@@ -62,7 +113,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=56-ye8jX4h0"
-              class="video"
+              sub="video"
               image={tambemsonhar}
               description="Também Sonhar (Part 1)"
             />
@@ -70,7 +121,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.rimasebatidas.pt/slow-j-you-are-forgiven/"
-              class="entrevista"
+              sub="critica"
               image={yafreb}
               description="R&B - You Are Forgiven"
             />
@@ -78,7 +129,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.rimasebatidas.pt/slow-j-preciso-desconstruir/"
-              class="entrevista"
+              sub="entrevista"
               image={rimasebatidas}
               description="Rimas e Batidas"
             />
@@ -86,7 +137,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=tHJNEAsLCCo"
-              class="video"
+              sub="video"
               image={nuncapares}
               description="Nunca Pares"
             />
@@ -94,7 +145,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=sXlD6Wcpy6c"
-              class="video"
+              sub="video"
               image={megahits}
               description="Mega Hits"
             />
@@ -102,7 +153,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.rimasebatidas.pt/slow-j-the-art-of-slowing-down/"
-              class="entrevista"
+              sub="critica"
               image={taosdreb}
               description="R&B - The Art Of Slowing Down"
             />
@@ -110,7 +161,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.publico.pt/2017/03/24/culturaipsilon/noticia/slow-j-1765940"
-              class="entrevista"
+              sub="entrevista"
               image={publico}
               description="Público"
             />
@@ -118,7 +169,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=rzPGBIPWuHE"
-              class="video"
+              sub="video"
               image={arte}
               description="Arte (Meet Speedy)"
             />
@@ -126,7 +177,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=o7u8aX8dUPE"
-              class="video"
+              sub="video"
               image={antena3}
               description="Antena 3"
             />
@@ -134,7 +185,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="http://mdemusica.pt/2016/11/09/slow-j-album-vai-algo-especial/"
-              class="entrevista video"
+              sub="entrevista video"
               image={mdemusica}
               description="M de Musica"
             />
@@ -142,7 +193,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=1rETsKuw2Hk"
-              class="video"
+              sub="video"
               image={vidaboa}
               description="Vida Boa"
             />
@@ -150,7 +201,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=flILuwfNWbM"
-              class="video"
+              sub="video"
               image={sofarlisbon}
               description="O Cliente @Sofar Lisbon"
             />
@@ -158,7 +209,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=5R8SIoaIwE0"
-              class="video"
+              sub="video"
               image={comida}
               description="Comida"
             />
@@ -166,7 +217,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=Y5PINCsl9RQ"
-              class="video"
+              sub="video"
               image={cristalina}
               description="Cristalina"
             />
@@ -174,7 +225,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=SQJfxC6n6KY"
-              class="entrevista video"
+              sub="entrevista video"
               image={bpslowj}
               description="BP vs Slow J [RVCA | Surge Skate]"
             />
@@ -182,7 +233,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=_SphtRjwOSk"
-              class="video"
+              sub="video"
               image={tintadaraiz}
               description="Tinta da Raiz"
             />
@@ -190,7 +241,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=bAFJhH9l8IQ"
-              class="entrevista video"
+              sub="entrevista video"
               image={listeningparty}
               description="The Free Food Tape - Listening Party"
             />
@@ -198,7 +249,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.rimasebatidas.pt/slow-j-the-free-food-tape-ep/"
-              class="entrevista"
+              sub="critica"
               image={tfftreb}
               description="R&B - The Free Food Tape"
             />
@@ -211,15 +262,38 @@ export default class MediaSection extends React.Component {
         <div className="mediaContainer mediaContainerMobile">
           <div className="mediaTitle mediaTitleMobile">Media</div>
           <div className="mediaSeparator mediaSeparatorMobile"></div>
-          <div
-            className="mediaItemsContainer mediaItemsContainerMobile"
-            data-isotope='{ "itemSelector": ".mediaItem", "layoutMode": "fitRows" }'
-          >
+          <div className="mediaFilterButtons mediaFilterButtonsMobile">
+            <div
+              className="filterButton filterButtonMobile active"
+              data-filter="*"
+            >
+              Show All
+            </div>
+            <div
+              className="filterButton filterButtonMobile"
+              data-filter=".video"
+            >
+              Video
+            </div>
+            <div
+              className="filterButton filterButtonMobile"
+              data-filter=".entrevista"
+            >
+              Entrevista
+            </div>
+            <div
+              className="filterButton filterButtonMobile"
+              data-filter=".critica"
+            >
+              Critica
+            </div>
+          </div>
+          <div className="mediaItemsContainer mediaItemsContainerMobile">
             <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=7BYFJL81Dz4"
-              class="video"
+              sub="video"
               image={lagrimas}
               description="Lágrimas (Part 2)"
             />
@@ -227,7 +301,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.publico.pt/2019/12/13/culturaipsilon/entrevista/-slow-j-you-are-forgiven-significa-ja-nasceste-perdao-ideia-liberdade-1896669"
-              class="entrevista"
+              sub="critica"
               image={yafpublico}
               description="Público - You Are Forgiven"
             />
@@ -235,7 +309,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.comunidadeculturaearte.com/you-are-forgiven-slow-j-no-seu-estado-mais-puro/"
-              class="entrevista"
+              sub="critica"
               image={yafcca}
               description="CCA - You Are Forgiven"
             />
@@ -243,7 +317,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=56-ye8jX4h0"
-              class="video"
+              sub="video"
               image={tambemsonhar}
               description="Também Sonhar (Part 1)"
             />
@@ -251,7 +325,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.rimasebatidas.pt/slow-j-you-are-forgiven/"
-              class="entrevista"
+              sub="critica"
               image={yafreb}
               description="R&B - You Are Forgiven"
             />
@@ -259,7 +333,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.rimasebatidas.pt/slow-j-preciso-desconstruir/"
-              class="entrevista"
+              sub="entrevista"
               image={rimasebatidas}
               description="Rimas e Batidas"
             />
@@ -267,7 +341,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=tHJNEAsLCCo"
-              class="video"
+              sub="video"
               image={nuncapares}
               description="Nunca Pares"
             />
@@ -275,7 +349,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=sXlD6Wcpy6c"
-              class="video"
+              sub="video"
               image={megahits}
               description="Mega Hits"
             />
@@ -283,7 +357,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.rimasebatidas.pt/slow-j-the-art-of-slowing-down/"
-              class="entrevista"
+              sub="critica"
               image={taosdreb}
               description="R&B - The Art Of Slowing Down"
             />
@@ -291,7 +365,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.publico.pt/2017/03/24/culturaipsilon/noticia/slow-j-1765940"
-              class="entrevista"
+              sub="entrevista"
               image={publico}
               description="Público"
             />
@@ -299,7 +373,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=rzPGBIPWuHE"
-              class="video"
+              sub="video"
               image={arte}
               description="Arte (Meet Speedy)"
             />
@@ -307,7 +381,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=o7u8aX8dUPE"
-              class="video"
+              sub="video"
               image={antena3}
               description="Antena 3"
             />
@@ -315,7 +389,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="http://mdemusica.pt/2016/11/09/slow-j-album-vai-algo-especial/"
-              class="entrevista video"
+              sub="entrevista video"
               image={mdemusica}
               description="M de Musica"
             />
@@ -323,7 +397,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=1rETsKuw2Hk"
-              class="video"
+              sub="video"
               image={vidaboa}
               description="Vida Boa"
             />
@@ -331,7 +405,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=flILuwfNWbM"
-              class="video"
+              sub="video"
               image={sofarlisbon}
               description="O Cliente @Sofar Lisbon"
             />
@@ -339,7 +413,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=5R8SIoaIwE0"
-              class="video"
+              sub="video"
               image={comida}
               description="Comida"
             />
@@ -347,7 +421,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=Y5PINCsl9RQ"
-              class="video"
+              sub="video"
               image={cristalina}
               description="Cristalina"
             />
@@ -355,7 +429,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=SQJfxC6n6KY"
-              class="entrevista video"
+              sub="entrevista video"
               image={bpslowj}
               description="BP vs Slow J [RVCA | Surge Skate]"
             />
@@ -363,7 +437,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=_SphtRjwOSk"
-              class="video"
+              sub="video"
               image={tintadaraiz}
               description="Tinta da Raiz"
             />
@@ -371,7 +445,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.youtube.com/watch?v=bAFJhH9l8IQ"
-              class="entrevista video"
+              sub="entrevista video"
               image={listeningparty}
               description="The Free Food Tape - Listening Party"
             />
@@ -379,7 +453,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="https://www.rimasebatidas.pt/slow-j-the-free-food-tape-ep/"
-              class="entrevista"
+              sub="critica"
               image={tfftreb}
               description="R&B - The Free Food Tape"
             />
