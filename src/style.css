@@ -472,10 +472,15 @@ body {
   }
 }
 /****************BIO****************/
-.bioTextDesktop {
+.bioLogoImageDesktop {
   padding-top: 100px;
+  width: 40%;
+  margin-left: 45%;
+}
+.bioTextDesktop {
+  padding-top: 50px;
   padding-bottom: 100px;
-  width: 35%;
+  width: 40%;
   margin-left: 45%;
 }
 .separatorDesktop {
@@ -632,8 +637,14 @@ body {
   padding-bottom: 7vw;
 }
 /****************BIO****************/
+.bioLogoImageMobile {
+  padding-top: 20vw;
+  width: 80vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
 .bioTextMobile {
-  padding-top: 15vw;
+  padding-top: 10vw;
   padding-bottom: 15vw;
   padding-left: 10vw;
   padding-right: 10vw;

@@ -1,10 +1,14 @@
 import React from "react";
+import bioLogo from "../../assets/images/bio-logo.png";
 
 export default class Section1 extends React.Component {
   render() {
     if (this.props.isDesktop === true && this.props.isMobile === false) {
       return (
         <div className="bioSection1 bioSection1Desktop">
+          <div className="bioLogo bioLogoDesktop">
+            <img className="bioLogoImage bioLogoImageDesktop" src={bioLogo} alt="Slow J"/>
+          </div>
           <div className="bioText bioTextDesktop">
             <p>
               <strong>João Batista Coelho a.k.a. Slow J (21/09/1992)</strong>
@@ -50,6 +54,9 @@ export default class Section1 extends React.Component {
     if (this.props.isDesktop === false && this.props.isMobile === true) {
       return (
         <div className="bioSection1 bioSection1Mobile">
+          <div className="bioLogo bioLogoMobile">
+            <img className="bioLogoImage bioLogoImageMobile" src={bioLogo} alt="Slow J"/>
+          </div>
           <div className="bioText bioTextMobile">
             <p>
               <strong>João Batista Coelho a.k.a. Slow J (21/09/1992)</strong>
