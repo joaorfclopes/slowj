@@ -235,6 +235,18 @@ body {
   right: 15px;
   font-weight: 900;
   font-size: 40px;
+  transition: 0.4s;
+}
+.mediaItemSub {
+  text-align: left;
+  position: absolute;
+  z-index: 100;
+  left: 30px;
+  bottom: -30px;
+  right: 15px;
+  font-weight: 900;
+  font-size: 20px;
+  transition: 0.4s;
 }
 @media only screen and (max-width: 1400px) {
   .mediaItem {
@@ -487,6 +499,14 @@ body {
   transition: 0.4s;
   opacity: 0.2;
   padding-left: 60px;
+}
+.mediaItemDesktop:hover .mediaItemDescription {
+  transition: 0.4s;
+  bottom: 60px;
+}
+.mediaItemDesktop:hover .mediaItemSub {
+  transition: 0.4s;
+  bottom: 30px;
 }
 /****************FOOTER****************/
 .footerDesktop {
