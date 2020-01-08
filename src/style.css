@@ -246,6 +246,7 @@ body {
   right: 15px;
   font-weight: 900;
   font-size: 20px;
+  opacity: 0;
   transition: 0.4s;
 }
 @media only screen and (max-width: 1400px) {
@@ -507,6 +508,7 @@ body {
 .mediaItemDesktop:hover .mediaItemSub {
   transition: 0.4s;
   bottom: 30px;
+  opacity: 1;
 }
 /****************FOOTER****************/
 .footerDesktop {
