@@ -637,6 +637,12 @@ body {
 .mediaItemImageMobile {
   opacity: 0.5;
 }
+.mediaItemMobile:active .mediaItemImageMobile,
+.mediaItemMobile:hover .mediaItemImageMobile {
+  transition: 0.4s;
+  opacity: 0.2;
+  padding-left: 60px;
+}
 /****************FOOTER****************/
 .footerMobile {
   height: 60vw;

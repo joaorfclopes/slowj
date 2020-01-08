@@ -3,6 +3,16 @@ import logo from "../../assets/svg/logo_white.svg";
 import menuLogo from "../../assets/svg/menu.svg";
 import $ from "jquery";
 
+$(window).scroll(function() {
+  if ($(window).scrollTop() >= 100) {
+    $(".navbar").css("height", "65px");
+    $(".navbarContainer").css("height", "65px");
+  } else {
+    $(".navbar").css("height", "55px");
+    $(".navbarContainer").css("height", "55px");
+  }
+});
+
 export default class Navbar extends React.Component {
   openMenu() {
     $(".sidenav").css("width", "270px");
