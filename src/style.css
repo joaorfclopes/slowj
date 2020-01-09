@@ -66,9 +66,9 @@ body {
 .basicButton {
   width: 120px;
   height: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   transition: 0.4s;
 }
 .basicButtonText {
@@ -331,9 +331,10 @@ body {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 46px;
-  height: 46px;
+  width: 44px;
+  height: 44px;
   background: white;
+  border: 2px solid #0A0A0A;
   border-radius: 50%;
   text-align: center;
   transition: 0.4s;
@@ -377,16 +378,8 @@ body {
     transform: translate3d(0, 200%, 0);
   }
 }
-.basicButtonDesktop {
-  transition: 0.4s;
-}
 .basicButtonDesktop:hover {
   border: 1px solid rgba(255, 255, 255, 1);
-  background: white;
-  transition: 0.4s;
-}
-.basicButtonDesktop:hover .basicButtonTextDesktop {
-  color: #0a0a0a;
   transition: 0.4s;
 }
 .entrarButtonContainerDesktop {
@@ -694,12 +687,6 @@ body {
 }
 .mediaItemImageMobile {
   opacity: 0.5;
-}
-.mediaItemMobile:active .mediaItemImageMobile,
-.mediaItemMobile:hover .mediaItemImageMobile {
-  transition: 0.4s;
-  opacity: 0.2;
-  padding-left: 60px;
 }
 .filterButtonMobile {
   font-size: 5.5vw;
