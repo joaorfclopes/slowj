@@ -1,7 +1,7 @@
 import React from "react";
-import Title from "../sections/Title";
-import Cover from "../sections/Cover";
-import ListenButtonsSection from "../sections/ListenButtonsSection";
+import Title from "./Title";
+import Cover from "./Cover";
+import ListenButtonsSection from "./ListenButtonsSection";
 import taosdTitle from "../../assets/images/TAOSD-title.png";
 import taosdCover from "../../assets/images/TAOSD-cover.jpg";
 

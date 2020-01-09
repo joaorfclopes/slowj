@@ -1,7 +1,7 @@
 import React from "react";
-import Title from "../sections/Title";
-import Cover from "../sections/Cover";
-import ListenButtonsSection from "../sections/ListenButtonsSection";
+import Title from "./Title";
+import Cover from "./Cover";
+import ListenButtonsSection from "./ListenButtonsSection";
 import yafTitle from "../../assets/images/YAF-title.png";
 import yafCover from "../../assets/images/YAF-cover.jpg";
 

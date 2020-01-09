@@ -8,7 +8,6 @@ export default class MediaItem extends React.Component {
           <a
             className="mediaItemLink"
             href={this.props.link}
-            target="_blank"
             rel="noopener noreferrer"
           >
             <div className="mediaItemDescription mediaItemDescriptionDesktop">
@@ -31,7 +30,6 @@ export default class MediaItem extends React.Component {
           <a
             className="mediaItemLink"
             href={this.props.link}
-            target="_blank"
             rel="noopener noreferrer"
           >
             <div className="mediaItemDescription mediaItemDescriptionMobile">

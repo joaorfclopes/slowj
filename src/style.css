@@ -340,6 +340,7 @@ body {
   transition: 0.4s;
   opacity: 0.3;
   visibility: hidden;
+  z-index: 999;
 }
 .scrollUp:hover {
   transition: 0.4s;

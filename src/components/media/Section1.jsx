@@ -1,5 +1,5 @@
 import React from "react";
-import MediaSection from "../sections/MediaSection";
+import MediaSection from "./MediaSection";
 
 export default class Section1 extends React.Component {
   render() {

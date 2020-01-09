@@ -1,8 +1,8 @@
 import React from "react";
-import Title from "../sections/Title";
-import Cover from "../sections/Cover";
-import ListenButtonsSection from "../sections/ListenButtonsSection";
-import Contacts from "../sections/Contacts";
+import Title from "./Title";
+import Cover from "./Cover";
+import ListenButtonsSection from "./ListenButtonsSection";
+import Contacts from "./Contacts";
 import tfftTitle from "../../assets/images/TFFT-title.png";
 import tfftCover from "../../assets/images/TFFT-cover.jpg";
 

@@ -42,7 +42,7 @@ export default class Main extends React.Component {
           <Router>
             <Switch>
               <Route exact path="/">
-                <Home isDesktop={isDesktop} isMobile={isMobile} />
+                <Home id="home" isDesktop={isDesktop} isMobile={isMobile} />
               </Route>
               <Route path="/bio">
                 <Bio isDesktop={isDesktop} isMobile={isMobile} />
@@ -62,7 +62,7 @@ export default class Main extends React.Component {
           <Router>
             <Switch>
               <Route exact path="/">
-                <Home isDesktop={isDesktop} isMobile={isMobile} />
+                <Home id="home" isDesktop={isDesktop} isMobile={isMobile} />
               </Route>
               <Route path="/bio">
                 <Bio isDesktop={isDesktop} isMobile={isMobile} />

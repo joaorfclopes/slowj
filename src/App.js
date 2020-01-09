@@ -10,6 +10,11 @@ export default class App extends React.Component {
   }
 
   componentWillMount() {
+    if (window.location.href.indexOf("media/") > -1) {
+      body.style.overflow = "visible";
+      this.props.hideLoader();
+      return;
+    }
     this.load();
   }
 
@@ -25,6 +30,11 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
+    if (window.location.href.indexOf("media/") > -1) {
+      body.style.overflow = "visible";
+      this.props.hideLoader();
+      return;
+    }
     this.renderApp();
   }
 
