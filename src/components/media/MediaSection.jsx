@@ -330,14 +330,13 @@ export default class MediaSection extends React.Component {
             </div>
           </div>
           <div className="mediaItemsContainer mediaItemsContainerMobile">
-          <MediaItem
+            <MediaItem
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="/media/lagrimas-video"
               itemClass="video"
               image={lagrimas}
               title="Lágrimas (Part 2)"
-              subtitle="Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -346,7 +345,6 @@ export default class MediaSection extends React.Component {
               itemClass="critica"
               image={yafpublico}
               title="Público - You Are Forgiven"
-              subtitle="Crítica"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -355,7 +353,6 @@ export default class MediaSection extends React.Component {
               itemClass="critica"
               image={yafcca}
               title="CCA - You Are Forgiven"
-              subtitle="Crítica"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -364,7 +361,6 @@ export default class MediaSection extends React.Component {
               itemClass="video"
               image={tambemsonhar}
               title="Também Sonhar (Part 1)"
-              subtitle="Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -373,7 +369,6 @@ export default class MediaSection extends React.Component {
               itemClass="critica"
               image={yafreb}
               title="R&B - You Are Forgiven"
-              subtitle="Crítica"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -382,7 +377,6 @@ export default class MediaSection extends React.Component {
               itemClass="entrevista"
               image={rimasebatidas}
               title="Rimas e Batidas"
-              subtitle="Entrevista"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -391,7 +385,6 @@ export default class MediaSection extends React.Component {
               itemClass="video"
               image={nuncapares}
               title="Nunca Pares"
-              subtitle="Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -400,7 +393,6 @@ export default class MediaSection extends React.Component {
               itemClass="video"
               image={megahits}
               title="Mega Hits"
-              subtitle="Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -409,7 +401,6 @@ export default class MediaSection extends React.Component {
               itemClass="critica"
               image={taosdreb}
               title="R&B - The Art Of Slowing Down"
-              subtitle="Crítica"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -418,7 +409,6 @@ export default class MediaSection extends React.Component {
               itemClass="entrevista"
               image={publico}
               title="Público"
-              subtitle="Entrevista"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -427,7 +417,6 @@ export default class MediaSection extends React.Component {
               itemClass="video"
               image={arte}
               title="Arte (Meet Speedy)"
-              subtitle="Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -436,7 +425,6 @@ export default class MediaSection extends React.Component {
               itemClass="video"
               image={antena3}
               title="Antena 3"
-              subtitle="Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -445,7 +433,6 @@ export default class MediaSection extends React.Component {
               itemClass="entrevista video"
               image={mdemusica}
               title="M de Musica"
-              subtitle="Entrevista, Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -454,7 +441,6 @@ export default class MediaSection extends React.Component {
               itemClass="video"
               image={vidaboa}
               title="Vida Boa"
-              subtitle="Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -463,7 +449,6 @@ export default class MediaSection extends React.Component {
               itemClass="video"
               image={sofarlisbon}
               title="O Cliente @Sofar Lisbon"
-              subtitle="Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -472,7 +457,6 @@ export default class MediaSection extends React.Component {
               itemClass="video"
               image={comida}
               title="Comida"
-              subtitle="Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -481,7 +465,6 @@ export default class MediaSection extends React.Component {
               itemClass="video"
               image={cristalina}
               title="Cristalina"
-              subtitle="Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -490,7 +473,6 @@ export default class MediaSection extends React.Component {
               itemClass="entrevista video"
               image={bpslowj}
               title="BP vs Slow J [RVCA | Surge Skate]"
-              subtitle="Entrevista, Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -499,7 +481,6 @@ export default class MediaSection extends React.Component {
               itemClass="video"
               image={tintadaraiz}
               title="Tinta da Raiz"
-              subtitle="Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -508,7 +489,6 @@ export default class MediaSection extends React.Component {
               itemClass="entrevista video"
               image={listeningparty}
               title="The Free Food Tape - Listening Party"
-              subtitle="Entrevista, Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -517,7 +497,6 @@ export default class MediaSection extends React.Component {
               itemClass="critica"
               image={tfftreb}
               title="R&B - The Free Food Tape"
-              subtitle="Crítica"
             />
           </div>
         </div>

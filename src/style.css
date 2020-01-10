@@ -503,6 +503,9 @@ body {
 }
 /****************MEDIA****************/
 /*SECTION 1*/
+.mediaContainerDesktop {
+  min-height: 100vh;
+}
 .mediaTitleDesktop {
   font-size: 70px;
   padding-top: 60px;
