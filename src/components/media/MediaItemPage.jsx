@@ -33,7 +33,7 @@ export default class MediaItemPage extends React.Component {
     if (this.props.isDesktop === false && this.props.isMobile === true) {
       return (
         <div className="mediaItemPage mediaItemPageMobile">
-          <div className="mediaTitle mediaTitleMobile">Lágrimas</div>
+          <div className="mediaTitle mediaTitleMobile">{this.props.title}</div>
           <div className="mediaSeparator mediaSeparatorMobile"></div>
           <div className="mediaItemSubtitleContainer mediaItemSubtitleContainerMobile">
             <div className="mediaItemSubtitle mediaItemSubtitleMobile">
@@ -41,7 +41,7 @@ export default class MediaItemPage extends React.Component {
                 className="mediaItemSubtitleLink mediaItemSubtitleLinkMobile"
                 href="/media"
               >
-                Vídeo
+                {this.props.subtitle}
               </a>
             </div>
           </div>

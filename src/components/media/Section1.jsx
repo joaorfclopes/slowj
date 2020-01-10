@@ -6,7 +6,26 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 export default class Section1 extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { title: "Title", subtitle: "Subtitle" };
+    this.state = {
+      title: "Title",
+      subtitle: "Subtitle"
+    };
+  }
+  checkUrl() {
+    if (window.location.href.indexOf("lagrimas-video") > -1) {
+      this.setState({
+        title: "Lágrimas (Part 2)",
+        subtitle: "Vídeo"
+      });
+    } else if (window.location.href.indexOf("publico-you-are-forgiven-critica") > -1) {
+      this.setState({
+        title: "Público - You Are Forgiven",
+        subtitle: "Crítica"
+      });
+    }
+  }
+  componentDidMount() {
+    this.checkUrl();
   }
   render() {
     return (
@@ -17,6 +36,7 @@ export default class Section1 extends React.Component {
               <MediaSection
                 isDesktop={this.props.isDesktop}
                 isMobile={this.props.isMobile}
+                onClick={this.checkUrl}
               />
             </Route>
             <Route path="/media/">
