@@ -5,7 +5,7 @@ export default class MediaItemPage extends React.Component {
     if (this.props.isDesktop === true && this.props.isMobile === false) {
       return (
         <div className="mediaItemPage mediaItemPageDesktop">
-          <div className="mediaTitle mediaTitleDesktop">Lágrimas</div>
+          <div className="mediaTitle mediaTitleDesktop">{this.props.title}</div>
           <div className="mediaSeparator mediaSeparatorDesktop"></div>
           <div className="mediaItemSubtitleContainer mediaItemSubtitleContainerDesktop">
             <div className="mediaItemSubtitle mediaItemSubtitleDesktop">
@@ -13,11 +13,11 @@ export default class MediaItemPage extends React.Component {
                 className="mediaItemSubtitleLink mediaItemSubtitleLinkDesktop"
                 href="/media"
               >
-                Vídeo
+                {this.props.subtitle}
               </a>
             </div>
           </div>
-          <div className="mediaItemPageVideoContainer mediaItemPageVideoContainerDesktop">
+          {/*<div className="mediaItemPageVideoContainer mediaItemPageVideoContainerDesktop">
             <iframe
               className="mediaItemPageVideo"
               title="video"
@@ -26,7 +26,7 @@ export default class MediaItemPage extends React.Component {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-          </div>
+          </div>*/}
         </div>
       );
     }
@@ -45,7 +45,7 @@ export default class MediaItemPage extends React.Component {
               </a>
             </div>
           </div>
-          <div className="mediaItemPageVideoContainer mediaItemPageVideoContainerMobile">
+          {/*<div className="mediaItemPageVideoContainer mediaItemPageVideoContainerMobile">
             <iframe
               className="mediaItemPageVideo"
               title="video"
@@ -54,7 +54,7 @@ export default class MediaItemPage extends React.Component {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-          </div>
+          </div>*/}
         </div>
       );
     }
