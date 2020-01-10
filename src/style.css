@@ -208,10 +208,10 @@ body {
 .mediaSeparator {
   background-color: black;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 .mediaFilterButtons {
   text-align: center;
-  padding-top: 30px;
 }
 .filterButton {
   display: inline;
@@ -309,6 +309,34 @@ body {
     height: 100vw;
   }
 }
+.mediaItemSubtitleContainer {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.mediaItemSubtitle {
+  display: inline;
+  color: black;
+  cursor: pointer;
+  font-weight: 900;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.mediaItemSubtitle:active,
+.mediaItemSubtitle:hover {
+  transition: 0.4s;
+  opacity: 1;
+}
+.mediaItemSubtitleLink {
+  text-decoration: none;
+  color: inherit;
+}
+.mediaItemPageVideoContainer {
+  margin: 0 auto;
+}
+.mediaItemPageVideo {
+  width: 100%;
+  height: 100%;
+}
 /****************FOOTER****************/
 .footer {
   background: #f4f4f4;
@@ -334,7 +362,7 @@ body {
   width: 44px;
   height: 44px;
   background: white;
-  border: 2px solid #0A0A0A;
+  border: 2px solid #0a0a0a;
   border-radius: 50%;
   text-align: center;
   transition: 0.4s;
@@ -537,6 +565,16 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
+.mediaItemSubtitleDesktop {
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.mediaItemPageVideoContainerDesktop {
+  width: 50vw;
+  height: 30vw;
+  padding-bottom: 30px;
+}
 /****************FOOTER****************/
 .footerDesktop {
   height: 300px;
@@ -696,6 +734,16 @@ body {
   font-size: 5.5vw;
   margin-left: 1.5vw;
   margin-right: 1.5vw;
+}
+.mediaItemSubtitleMobile {
+  font-size: 5.5vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+.mediaItemPageVideoContainerMobile {
+  width: 90vw;
+  height: 40vh;
+  padding-bottom: 5vw;
 }
 /****************FOOTER****************/
 .footerMobile {

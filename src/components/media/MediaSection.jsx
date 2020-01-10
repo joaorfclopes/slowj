@@ -79,18 +79,18 @@ export default class MediaSection extends React.Component {
               Show All
             </div>
             <div
-              className="filterButton filterButtonDesktop videos"
-              data-filter=".video"
-              onClick={this.showVideos}
-            >
-              Vídeos
-            </div>
-            <div
               className="filterButton filterButtonDesktop entrevistas"
               data-filter=".entrevista"
               onClick={this.showEntrevistas}
             >
               Entrevistas
+            </div>
+            <div
+              className="filterButton filterButtonDesktop videos"
+              data-filter=".video"
+              onClick={this.showVideos}
+            >
+              Vídeos
             </div>
             <div
               className="filterButton filterButtonDesktop criticas"
