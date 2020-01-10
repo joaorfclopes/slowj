@@ -11,6 +11,7 @@ export default class Section1 extends React.Component {
       subtitle: "Subtitle"
     };
   }
+
   checkUrl() {
     if (window.location.href.indexOf("lagrimas-video") > -1) {
       this.setState({
@@ -130,16 +131,20 @@ export default class Section1 extends React.Component {
         title: "The Free Food Tape - Listening Party",
         subtitle: "Entrevista, Vídeo"
       });
-    } else if (window.location.href.indexOf("the-free-food-tape-critica") > -1) {
+    } else if (
+      window.location.href.indexOf("the-free-food-tape-critica") > -1
+    ) {
       this.setState({
         title: "R&B - The Free Food Tape",
         subtitle: "Crítica"
       });
     }
   }
+
   componentDidMount() {
     this.checkUrl();
   }
+
   render() {
     return (
       <div className="mediaSection1">

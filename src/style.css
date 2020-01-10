@@ -35,11 +35,12 @@ body {
 .loader--hide {
   opacity: 0;
   z-index: -1;
+  display: none;
 }
 .loaderIcon {
   text-align: center;
   position: relative;
-  top: 40%;
+  top: 40vh;
 }
 .loaderIconImg {
   animation-name: spin;
