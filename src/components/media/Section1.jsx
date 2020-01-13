@@ -140,7 +140,7 @@ export default class Section1 extends React.Component {
                 isDesktop={this.props.isDesktop}
                 isMobile={this.props.isMobile}
                 title={this.state.title}
-                subtitle={this.state.subtitle}
+                link={this.state.link}
               />
             </Route>
           </Switch>

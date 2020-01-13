@@ -12,7 +12,7 @@ export default class MediaItemPage extends React.Component {
             <div className="mediaItemSubtitle mediaItemSubtitleDesktop">
               <a
                 className="mediaItemSubtitleLink mediaItemSubtitleLinkDesktop"
-                href="/media"
+                href="/media/"
               >
                 <img
                   className="mediaItemSubtitleContent arrowBackDesktop"
@@ -23,6 +23,17 @@ export default class MediaItemPage extends React.Component {
               </a>
             </div>
           </div>
+          <div className="mediaItemPageVideoContainer mediaItemPageVideoContainerDesktop">
+            <iframe
+              className="mediaItemPageVideo mediaItemPageVideoDesktop"
+              title="video"
+              src="https://www.youtube.com/embed/7BYFJL81Dz4"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="arrows"></div>
         </div>
       );
     }
@@ -35,7 +46,7 @@ export default class MediaItemPage extends React.Component {
             <div className="mediaItemSubtitle mediaItemSubtitleMobile">
               <a
                 className="mediaItemSubtitleLink mediaItemSubtitleLinkMobile"
-                href="/media"
+                href="/media/"
               >
                 <img
                   className="mediaItemSubtitleContent arrowBackMobile"
@@ -46,6 +57,17 @@ export default class MediaItemPage extends React.Component {
               </a>
             </div>
           </div>
+          <div className="mediaItemPageVideoContainer mediaItemPageVideoContainerMobile">
+            <iframe
+              className="mediaItemPageVideo mediaItemPageVideoMobile"
+              title="video"
+              src="https://www.youtube.com/embed/7BYFJL81Dz4"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="arrows"></div>
         </div>
       );
     }
