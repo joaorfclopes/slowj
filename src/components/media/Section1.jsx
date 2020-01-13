@@ -7,120 +7,100 @@ export default class Section1 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "Title",
-      subtitle: "Subtitle"
+      title: "Title"
     };
   }
 
   checkUrl() {
     if (window.location.href.indexOf("lagrimas-video") > -1) {
       this.setState({
-        title: "Lágrimas (Part 2)",
-        subtitle: "Vídeo"
+        title: "Lágrimas (Part 2)"
       });
     } else if (
       window.location.href.indexOf("publico-you-are-forgiven-critica") > -1
     ) {
       this.setState({
-        title: "Público - You Are Forgiven",
-        subtitle: "Crítica"
+        title: "Público - You Are Forgiven"
       });
     } else if (
       window.location.href.indexOf("cca-you-are-forgiven-critica") > -1
     ) {
       this.setState({
-        title: "CCA - You Are Forgiven",
-        subtitle: "Crítica"
+        title: "CCA - You Are Forgiven"
       });
     } else if (window.location.href.indexOf("tambem-sonhar-video") > -1) {
       this.setState({
-        title: "Também Sonhar (Part 1)",
-        subtitle: "Vídeo"
+        title: "Também Sonhar (Part 1)"
       });
     } else if (
       window.location.href.indexOf("r&b-you-are-forgiven-critica") > -1
     ) {
       this.setState({
-        title: "R&B - You Are Forgiven",
-        subtitle: "Crítica"
+        title: "R&B - You Are Forgiven"
       });
     } else if (window.location.href.indexOf("r&b-entrevista") > -1) {
       this.setState({
-        title: "Rimas e Batidas",
-        subtitle: "Entrevista"
+        title: "Rimas e Batidas"
       });
     } else if (window.location.href.indexOf("nunca-pares-video") > -1) {
       this.setState({
-        title: "Nunca Pares",
-        subtitle: "Vídeo"
+        title: "Nunca Pares"
       });
     } else if (window.location.href.indexOf("mega-hits-video") > -1) {
       this.setState({
-        title: "Mega Hits",
-        subtitle: "Vídeo"
+        title: "Mega Hits"
       });
     } else if (
       window.location.href.indexOf("r&b-the-art-of-slowing-down-critica") > -1
     ) {
       this.setState({
-        title: "R&B - The Art Of Slowing Down",
-        subtitle: "Crítica"
+        title: "R&B - The Art Of Slowing Down"
       });
     } else if (window.location.href.indexOf("publico-entrevista") > -1) {
       this.setState({
-        title: "Público",
-        subtitle: "Entrevista"
+        title: "Público"
       });
     } else if (window.location.href.indexOf("arte-video") > -1) {
       this.setState({
-        title: "Arte (Meet Speedy)",
-        subtitle: "Vídeo"
+        title: "Arte (Meet Speedy)"
       });
     } else if (window.location.href.indexOf("antena-3-video") > -1) {
       this.setState({
-        title: "Antena 3",
-        subtitle: "Vídeo"
+        title: "Antena 3"
       });
     } else if (
       window.location.href.indexOf("m-de-musica-entrevista-video") > -1
     ) {
       this.setState({
-        title: "M de Musica",
-        subtitle: "Entrevista, Vídeo"
+        title: "M de Musica"
       });
     } else if (window.location.href.indexOf("vida-boa-video") > -1) {
       this.setState({
-        title: "Vida Boa",
-        subtitle: "Vídeo"
+        title: "Vida Boa"
       });
     } else if (
       window.location.href.indexOf("o-cliente-sofar-lisbon-video") > -1
     ) {
       this.setState({
-        title: "O Cliente @Sofar Lisbon",
-        subtitle: "Vídeo"
+        title: "O Cliente @Sofar Lisbon"
       });
     } else if (window.location.href.indexOf("comida-video") > -1) {
       this.setState({
-        title: "Comida",
-        subtitle: "Vídeo"
+        title: "Comida"
       });
     } else if (window.location.href.indexOf("cristalina-video") > -1) {
       this.setState({
-        title: "Cristalina",
-        subtitle: "Vídeo"
+        title: "Cristalina"
       });
     } else if (
       window.location.href.indexOf("bp-slowj-surge-skate-entrevista-video") > -1
     ) {
       this.setState({
-        title: "BP vs Slow J [RVCA | Surge Skate]",
-        subtitle: "Entrevista, Vídeo"
+        title: "BP vs Slow J [RVCA | Surge Skate]"
       });
     } else if (window.location.href.indexOf("tinta-da-raiz-video") > -1) {
       this.setState({
-        title: "Tinta da Raiz",
-        subtitle: "Vídeo"
+        title: "Tinta da Raiz"
       });
     } else if (
       window.location.href.indexOf(
@@ -128,15 +108,13 @@ export default class Section1 extends React.Component {
       ) > -1
     ) {
       this.setState({
-        title: "The Free Food Tape - Listening Party",
-        subtitle: "Entrevista, Vídeo"
+        title: "The Free Food Tape - Listening Party"
       });
     } else if (
       window.location.href.indexOf("the-free-food-tape-critica") > -1
     ) {
       this.setState({
-        title: "R&B - The Free Food Tape",
-        subtitle: "Crítica"
+        title: "R&B - The Free Food Tape"
       });
     }
   }

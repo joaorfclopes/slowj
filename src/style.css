@@ -331,6 +331,9 @@ body {
   text-decoration: none;
   color: inherit;
 }
+.mediaItemSubtitleContent {
+  display: inline;
+}
 .mediaItemPageVideoContainer {
   margin: 0 auto;
 }
@@ -571,6 +574,10 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
+.arrowBackDesktop {
+  width: 13px;
+  margin-right: 1px;
+}
 .mediaItemPageVideoContainerDesktop {
   width: 50vw;
   height: 30vw;
@@ -740,6 +747,10 @@ body {
   font-size: 5.5vw;
   margin-left: 1.5vw;
   margin-right: 1.5vw;
+}
+.arrowBackMobile {
+  width: 3.5vw;
+  margin-right: 0.5vw;
 }
 .mediaItemPageVideoContainerMobile {
   width: 90vw;

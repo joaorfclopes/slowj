@@ -1,4 +1,5 @@
 import React from "react";
+import arrowBack from "../../assets/svg/back.svg";
 
 export default class MediaItemPage extends React.Component {
   render() {
@@ -13,7 +14,12 @@ export default class MediaItemPage extends React.Component {
                 className="mediaItemSubtitleLink mediaItemSubtitleLinkDesktop"
                 href="/media"
               >
-                {this.props.subtitle}
+                <img
+                  className="mediaItemSubtitleContent arrowBackDesktop"
+                  src={arrowBack}
+                  alt="Arrow Back"
+                />
+                <div className="mediaItemSubtitleContent">Back</div>
               </a>
             </div>
           </div>
@@ -31,7 +37,12 @@ export default class MediaItemPage extends React.Component {
                 className="mediaItemSubtitleLink mediaItemSubtitleLinkMobile"
                 href="/media"
               >
-                {this.props.subtitle}
+                <img
+                  className="mediaItemSubtitleContent arrowBackMobile"
+                  src={arrowBack}
+                  alt="Arrow Back"
+                />
+                <div className="mediaItemSubtitleContent">Back</div>
               </a>
             </div>
           </div>
