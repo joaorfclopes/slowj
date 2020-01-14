@@ -21,7 +21,7 @@ export default class MediaItemPage extends React.Component {
             <iframe
               className="mediaItemPageVideo mediaItemPageVideoDesktop"
               title="video"
-              src="https://www.youtube.com/embed/7BYFJL81Dz4"
+              src={this.props.iframe}
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -50,7 +50,7 @@ export default class MediaItemPage extends React.Component {
             <iframe
               className="mediaItemPageVideo mediaItemPageVideoMobile"
               title="video"
-              src="https://www.youtube.com/embed/7BYFJL81Dz4"
+              src={this.props.iframe}
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
