@@ -327,10 +327,6 @@ body {
   transition: 0.4s;
   opacity: 1;
 }
-.mediaItemSubtitleLink {
-  text-decoration: none;
-  color: inherit;
-}
 .mediaItemPageVideoContainer {
   margin: 0 auto;
   background: url("./assets/svg/loader.svg") center center no-repeat;

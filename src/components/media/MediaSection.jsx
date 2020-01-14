@@ -204,10 +204,10 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="/media/antena-3-video"
-              itemClass="video"
+              itemClass="entrevista video"
               image={antena3}
               title="Antena 3"
-              subtitle="Vídeo"
+              subtitle="Entrevista, Vídeo"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -422,7 +422,7 @@ export default class MediaSection extends React.Component {
               isDesktop={this.props.isDesktop}
               isMobile={this.props.isMobile}
               link="/media/antena-3-video"
-              itemClass="video"
+              itemClass="entrevista video"
               image={antena3}
               title="Antena 3"
             />
