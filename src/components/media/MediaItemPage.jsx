@@ -1,10 +1,31 @@
 import React from "react";
+import Video from "./Video";
+import Critic from "./Critic";
 
 export default class MediaItemPage extends React.Component {
   goBack() {
     window.history.back();
   }
   render() {
+    let content;
+    if (this.props.video === "true") {
+      content = (
+        <Video
+          isDesktop={this.props.isDesktop}
+          isMobile={this.props.isMobile}
+          content={this.props.content}
+        />
+      );
+    } else {
+      content = (
+        <Critic
+          isDesktop={this.props.isDesktop}
+          isMobile={this.props.isMobile}
+          content={this.props.content}
+          image={this.props.image}
+        />
+      );
+    }
     if (this.props.isDesktop === true && this.props.isMobile === false) {
       return (
         <div className="mediaItemPage mediaItemPageDesktop">
@@ -19,14 +40,7 @@ export default class MediaItemPage extends React.Component {
             </div>
           </div>
           <div className="mediaItemPageVideoContainer mediaItemPageVideoContainerDesktop">
-            <iframe
-              className="mediaItemPageVideo mediaItemPageVideoDesktop"
-              title="content"
-              src={this.props.iframe}
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            {content}
           </div>
           <div className="arrows"></div>
         </div>
@@ -46,14 +60,7 @@ export default class MediaItemPage extends React.Component {
             </div>
           </div>
           <div className="mediaItemPageVideoContainer mediaItemPageVideoContainerMobile">
-            <iframe
-              className="mediaItemPageVideo mediaItemPageVideoMobile"
-              title="content"
-              src={this.props.iframe}
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            {content}
           </div>
           <div className="arrows"></div>
         </div>
