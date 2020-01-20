@@ -336,38 +336,6 @@ body {
   width: 100%;
   height: 100%;
 }
-.mediaItemPageCriticDesktop {
-  cursor: pointer;
-  overflow: hidden;
-}
-.mediaItemPageCriticDesktop:hover .criticCoverDesktop {
-  transform: scale(1.1);
-  transition: 0.4s;
-}
-.criticCover {
-  background-position: center;
-  width: 100%;
-}
-.criticCoverDesktop {
-  height: 15vw;
-  transition: 0.4s;
-}
-.criticCoverMobile {
-  height: 20vh;
-}
-.criticText {
-  background-color: white;
-  width: 100%;
-}
-.criticTextDesktop {
-  height: 15vw;
-}
-.criticTextMobile {
-  height: 20vh;
-}
-.arrows {
-  height: 5vh;
-}
 /****************FOOTER****************/
 .footer {
   background: #f4f4f4;
@@ -604,7 +572,6 @@ body {
 .mediaItemPageVideoContainerDesktop {
   width: 50vw;
   height: 30vw;
-  margin-bottom: 30px;
   background-size: 100px;
 }
 /****************FOOTER****************/
@@ -775,7 +742,6 @@ body {
 .mediaItemPageVideoContainerMobile {
   width: 90vw;
   height: 40vh;
-  margin-bottom: 5vw;
   background-size: 15vh;
 }
 /****************FOOTER****************/

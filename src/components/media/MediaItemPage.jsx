@@ -39,10 +39,9 @@ export default class MediaItemPage extends React.Component {
               {`< Back`}
             </div>
           </div>
-          <div className="mediaItemPageVideoContainer mediaItemPageVideoContainerDesktop">
+          <div className="mediaItemPageContent mediaItemPageContentDesktop">
             {content}
           </div>
-          <div className="arrows"></div>
         </div>
       );
     }
@@ -59,10 +58,9 @@ export default class MediaItemPage extends React.Component {
               {`< Back`}
             </div>
           </div>
-          <div className="mediaItemPageVideoContainer mediaItemPageVideoContainerMobile">
+          <div className="mediaItemPageContent mediaItemPageContentMobile">
             {content}
           </div>
-          <div className="arrows"></div>
         </div>
       );
     }

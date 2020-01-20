@@ -72,6 +72,7 @@ export default class Main extends React.Component {
               </Route>
             </Switch>
           </Router>
+          <ScrollTop />
         </div>
       );
     }
