@@ -321,6 +321,7 @@ body {
   font-weight: 900;
   opacity: 0.5;
   transition: 0.4s;
+  text-decoration: none;
 }
 .mediaItemSubtitle:active,
 .mediaItemSubtitle:hover {
@@ -335,6 +336,19 @@ body {
 .mediaItemPageVideo {
   width: 100%;
   height: 100%;
+}
+.mediaItemPageCritic {
+  background: white;
+  margin: auto;
+}
+.mediaItemPageCriticImage {
+  background-position: center;
+}
+.mediaItemPageCriticText {
+  color: black;
+}
+.mediaItemPageCriticTitle {
+  font-weight: bold;
 }
 /****************FOOTER****************/
 .footer {
@@ -569,10 +583,29 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
+.mediaItemPageContentDesktop {
+  padding-bottom: 5vw;
+}
 .mediaItemPageVideoContainerDesktop {
   width: 50vw;
   height: 30vw;
   background-size: 100px;
+}
+.mediaItemPageCriticDesktop {
+  width: 50vw;
+}
+.mediaItemPageCriticImageDesktop {
+  height: 15vw;
+}
+.mediaItemPageCriticTextDesktop {
+  padding: 20px;
+}
+.mediaItemPageCriticTitleDesktop {
+  font-size: 50px;
+}
+.mediaItemPageCriticDescDesktop {
+  margin-top: 10px;
+  font-size: 20px;
 }
 /****************FOOTER****************/
 .footerDesktop {
@@ -739,10 +772,29 @@ body {
   margin-left: 1.5vw;
   margin-right: 1.5vw;
 }
+.mediaItemPageContentMobile {
+  padding-bottom: 15vw;
+}
 .mediaItemPageVideoContainerMobile {
   width: 90vw;
   height: 60vw;
   background-size: 20vw;
+}
+.mediaItemPageCriticMobile {
+  width: 80vw;
+}
+.mediaItemPageCriticImageMobile {
+  height: 40vw;
+}
+.mediaItemPageCriticTextMobile {
+  padding: 10px;
+}
+.mediaItemPageCriticTitleMobile {
+  font-size: 8vw;
+}
+.mediaItemPageCriticDescMobile {
+  margin-top: 5px;
+  font-size: 5vw;
 }
 /****************FOOTER****************/
 .footerMobile {

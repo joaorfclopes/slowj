@@ -3,9 +3,6 @@ import Video from "./Video";
 import Critic from "./Critic";
 
 export default class MediaItemPage extends React.Component {
-  goBack() {
-    window.history.back();
-  }
   render() {
     let content;
     if (this.props.video === "true") {
@@ -32,12 +29,12 @@ export default class MediaItemPage extends React.Component {
           <div className="mediaTitle mediaTitleDesktop">{this.props.title}</div>
           <div className="mediaSeparator mediaSeparatorDesktop"></div>
           <div className="mediaItemSubtitleContainer mediaItemSubtitleContainerDesktop">
-            <div
+            <a
               className="mediaItemSubtitle mediaItemSubtitleDesktop"
-              onClick={this.goBack}
+              href="/media"
             >
               {`< Back`}
-            </div>
+            </a>
           </div>
           <div className="mediaItemPageContent mediaItemPageContentDesktop">
             {content}
@@ -51,12 +48,12 @@ export default class MediaItemPage extends React.Component {
           <div className="mediaTitle mediaTitleMobile">{this.props.title}</div>
           <div className="mediaSeparator mediaSeparatorMobile"></div>
           <div className="mediaItemSubtitleContainer mediaItemSubtitleContainerMobile">
-            <div
+            <a
               className="mediaItemSubtitle mediaItemSubtitleMobile"
-              onClick={this.goBack}
+              href="/media"
             >
               {`< Back`}
-            </div>
+            </a>
           </div>
           <div className="mediaItemPageContent mediaItemPageContentMobile">
             {content}
