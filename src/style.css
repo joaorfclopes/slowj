@@ -741,8 +741,8 @@ body {
 }
 .mediaItemPageVideoContainerMobile {
   width: 90vw;
-  height: 40vh;
-  background-size: 15vh;
+  height: 60vw;
+  background-size: 20vw;
 }
 /****************FOOTER****************/
 .footerMobile {
