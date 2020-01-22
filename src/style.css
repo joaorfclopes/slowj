@@ -341,8 +341,12 @@ body {
   background: white;
   margin: auto;
 }
+.mediaItemPageCriticImageContainer {
+  overflow: hidden;
+}
 .mediaItemPageCriticImage {
   background-position: center;
+  cursor: pointer;
 }
 .mediaItemPageCriticText {
   color: black;
@@ -596,6 +600,11 @@ body {
 }
 .mediaItemPageCriticImageDesktop {
   height: 15vw;
+  transition: 0.4s;
+}
+.mediaItemPageCriticImageDesktop:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
 }
 .mediaItemPageCriticTextDesktop {
   padding: 20px;

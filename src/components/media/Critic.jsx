@@ -5,13 +5,18 @@ export default class Critic extends React.Component {
     if (this.props.isDesktop === true && this.props.isMobile === false) {
       return (
         <div className="mediaItemPageCritic mediaItemPageCriticDesktop">
-          <div
-            className="mediaItemPageCriticImage mediaItemPageCriticImageDesktop"
-            style={{ backgroundImage: `url(${this.props.image})` }}
-          ></div>
+          <div className="mediaItemPageCriticImageContainer mediaItemPageCriticImageContainerDesktop">
+            <a href={this.props.link} target="_blank" rel="noopener noreferrer">
+              <div
+                className="mediaItemPageCriticImage mediaItemPageCriticImageDesktop"
+                style={{ backgroundImage: `url(${this.props.image})` }}
+                onClick={this.goToLink}
+              ></div>
+            </a>
+          </div>
           <div className="mediaItemPageCriticText mediaItemPageCriticTextDesktop">
             <div className="mediaItemPageCriticTitle mediaItemPageCriticTitleDesktop">
-              Title
+              {this.props.title}
             </div>
             <div className="mediaItemPageCriticDesc mediaItemPageCriticDescDesktop">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -35,13 +40,17 @@ export default class Critic extends React.Component {
     if (this.props.isDesktop === false && this.props.isMobile === true) {
       return (
         <div className="mediaItemPageCritic mediaItemPageCriticMobile">
-          <div
-            className="mediaItemPageCriticImage mediaItemPageCriticImageMobile"
-            style={{ backgroundImage: `url(${this.props.image})` }}
-          ></div>
+          <div className="mediaItemPageCriticImageContainer mediaItemPageCriticImageContainerMobile">
+            <a href={this.props.link} target="_blank" rel="noopener noreferrer">
+              <div
+                className="mediaItemPageCriticImage mediaItemPageCriticImageMobile"
+                style={{ backgroundImage: `url(${this.props.image})` }}
+              ></div>
+            </a>
+          </div>
           <div className="mediaItemPageCriticText mediaItemPageCriticTextMobile">
             <div className="mediaItemPageCriticTitle mediaItemPageCriticTitleMobile">
-              Title
+              {this.props.title}
             </div>
             <div className="mediaItemPageCriticDesc mediaItemPageCriticDescMobile">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer

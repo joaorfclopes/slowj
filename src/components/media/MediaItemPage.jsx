@@ -20,6 +20,8 @@ export default class MediaItemPage extends React.Component {
           isMobile={this.props.isMobile}
           content={this.props.content}
           image={this.props.image}
+          link={this.props.content}
+          title={this.props.title}
         />
       );
     }
