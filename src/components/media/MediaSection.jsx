@@ -1,7 +1,6 @@
 import React from "react";
 import MediaItem from "./MediaItem";
 import lagrimas from "../../assets/images/lagrimas.jpg";
-import yafpublico from "../../assets/images/yafpublico.jpg";
 import yafcca from "../../assets/images/yafcca.jpg";
 import tambemsonhar from "../../assets/images/tambemsonhar.jpg";
 import yafreb from "../../assets/images/yafreb.jpg";
@@ -109,15 +108,6 @@ export default class MediaSection extends React.Component {
               image={lagrimas}
               title="Lágrimas (Part 2)"
               subtitle="Vídeo"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="/media/publico-you-are-forgiven-critica"
-              itemClass="critica"
-              image={yafpublico}
-              title="Público - You Are Forgiven"
-              subtitle="Crítica"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}
@@ -337,14 +327,6 @@ export default class MediaSection extends React.Component {
               itemClass="video"
               image={lagrimas}
               title="Lágrimas (Part 2)"
-            />
-            <MediaItem
-              isDesktop={this.props.isDesktop}
-              isMobile={this.props.isMobile}
-              link="/media/publico-you-are-forgiven-critica"
-              itemClass="critica"
-              image={yafpublico}
-              title="Público - You Are Forgiven"
             />
             <MediaItem
               isDesktop={this.props.isDesktop}

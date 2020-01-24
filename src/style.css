@@ -354,6 +354,18 @@ body {
 .mediaItemPageCriticTitle {
   font-weight: bold;
 }
+.lerMais {
+  font-weight: bold;
+  display: inline;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.lerMais:hover {
+  transition: 0.4s;
+  opacity: 1;
+}
 /****************FOOTER****************/
 .footer {
   background: #f4f4f4;

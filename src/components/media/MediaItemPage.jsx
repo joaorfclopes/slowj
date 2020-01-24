@@ -22,6 +22,7 @@ export default class MediaItemPage extends React.Component {
           image={this.props.image}
           link={this.props.content}
           title={this.props.title}
+          paragraph={this.props.paragraph}
         />
       );
     }

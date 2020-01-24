@@ -10,7 +10,6 @@ export default class Critic extends React.Component {
               <div
                 className="mediaItemPageCriticImage mediaItemPageCriticImageDesktop"
                 style={{ backgroundImage: `url(${this.props.image})` }}
-                onClick={this.goToLink}
               ></div>
             </a>
           </div>
@@ -19,19 +18,16 @@ export default class Critic extends React.Component {
               {this.props.title}
             </div>
             <div className="mediaItemPageCriticDesc mediaItemPageCriticDescDesktop">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              consectetur placerat lacinia. Donec aliquam nunc sit amet
-              efficitur cursus. Etiam aliquet justo non tortor sagittis, eget
-              eleifend nunc congue. Vestibulum venenatis, justo et semper
-              venenatis, lacus velit dignissim sem, eu convallis ante dolor eu
-              nibh. Suspendisse potenti. Morbi pharetra rutrum dolor, at
-              fringilla magna. Donec ullamcorper, leo vel posuere pulvinar,
-              lorem nulla pulvinar lectus, sed rutrum elit elit nec neque. Duis
-              vitae risus et neque pretium fermentum eget eu felis. Sed sit amet
-              mi accumsan, ullamcorper ipsum vitae, mollis urna. Integer vel mi
-              mauris. Nam sit amet bibendum augue. Etiam suscipit augue vel
-              pulvinar ornare. Maecenas sit amet metus non massa dignissim
-              pulvinar vitae quis dui.
+              {this.props.paragraph}
+              <a
+                className="lerMais"
+                href={this.props.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                See More...
+              </a>
             </div>
           </div>
         </div>
@@ -53,19 +49,16 @@ export default class Critic extends React.Component {
               {this.props.title}
             </div>
             <div className="mediaItemPageCriticDesc mediaItemPageCriticDescMobile">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              consectetur placerat lacinia. Donec aliquam nunc sit amet
-              efficitur cursus. Etiam aliquet justo non tortor sagittis, eget
-              eleifend nunc congue. Vestibulum venenatis, justo et semper
-              venenatis, lacus velit dignissim sem, eu convallis ante dolor eu
-              nibh. Suspendisse potenti. Morbi pharetra rutrum dolor, at
-              fringilla magna. Donec ullamcorper, leo vel posuere pulvinar,
-              lorem nulla pulvinar lectus, sed rutrum elit elit nec neque. Duis
-              vitae risus et neque pretium fermentum eget eu felis. Sed sit amet
-              mi accumsan, ullamcorper ipsum vitae, mollis urna. Integer vel mi
-              mauris. Nam sit amet bibendum augue. Etiam suscipit augue vel
-              pulvinar ornare. Maecenas sit amet metus non massa dignissim
-              pulvinar vitae quis dui.
+              {this.props.paragraph}
+              <a
+                className="lerMais"
+                href={this.props.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                See More...
+              </a>
             </div>
           </div>
         </div>
